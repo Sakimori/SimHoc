@@ -1,4 +1,4 @@
-import os, pygame, player, tweepy, twitHandler, time
+import os, player, tweepy, twitHandler, time
 
 if __name__ == "__main__":
     #for name in ["Vivi", "Artemis", "Laika", "Sharks", "Dragons", "Melua", "Sabriina", "Jorts (Buttered)", "Jorts (Unbuttered)"]:
