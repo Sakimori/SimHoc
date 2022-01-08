@@ -22,6 +22,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="attributes.py" />
+    <Compile Include="twitHandler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="player.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SimHoc.py" />
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +44,13 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X86</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\s options.txt" />
+    <Content Include="Data\Twitter.keys" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
