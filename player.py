@@ -8,10 +8,13 @@ class Player(object):
     """A hockey player with attributes and various functions."""
 
     def __init__(self, name:str):
-        if len(name) > 30:
+        if name is None:
+            self.attributes = []
+        elif len(name) > 30:
             raise CreationError("Player name too long.")
-        self.name = name
-        self.attributes = self.loadAttributes()
+        else:
+            self.name = name
+            self.attributes = self.loadAttributes()
 
     def loadAttributes(self):
         """Generates attributes based on name, or loads from database if present."""
@@ -29,10 +32,18 @@ class Player(object):
         return send
 
     def getAttribute(self, shortname:str):
+        """Returns an Attribute object with given shortname."""
         for attr in self.attributes:
             if attr.name.lower().startswith(shortname.lower()):
-                return attr.value
+                return attr
         return None
+
+    def setAttribute(self, shortname:str, value:float):
+        for attr in self.attributes:
+            if attr.name.lower().startswith(shortname.lower()):
+                attr.value = value
+                return True
+        self.attributes.append(attributes.Attribute(attributes.singleAttribute(shortname)[0],value))
 
     def __eq__(self, value):
         if isinstance(value, Player):

@@ -27,7 +27,7 @@ class Attribute:
         return f"{valueString} - {self.name}"
 
     def __str__(self):
-        return f"{self.name}: {int(self.value)}"
+        return f"{self.name} - {int(self.value)}"
 
     #Comparison helpers
     def __eq__(self, other): #can compare attributes by name, or find attribute by value
@@ -95,7 +95,7 @@ def normalDis(mean:float, stdDev:float, min:float=-math.inf, max:float=math.inf)
 masterList = [
     ["Speed", 60, 25, 0, 100], #sprint speed (Forward)
     ["Agility", 50, 35, 0, 100], #changing directions/goaltending slide (Goalie)
-    ["Reflexes", 50, 35, 0, 100], #deflections/goaltending blocks/intercepting passes (Goalie)
+    ["Reflexes", 50, 35, 20, 100], #deflections/goaltending blocks/intercepting passes (Goalie)
     ["Strength", 40, 60, 0, 100], #power of slapshot/body checking (Defense)
     ["Dexterity", 50, 25, 10, 100], #power of wrist shot/dekes (Forward)
     ["Shot Accuracy", 40, 25, 10, 100], #accuracy on shots (Secondary/All Skaters)
@@ -120,3 +120,15 @@ def attributesFromName(name:str):
     for template in masterList:
         atrs.append(Attribute(template[0], seededNormalDis(generator, *template[1:])))
     return atrs
+
+def singleAttribute(shortname:str):
+    """Generates a tuple of (name,value) of an attribute with given shortname"""
+    for atr in masterList:
+        if atr[0].lower().startswith(shortname.lower()):
+            return (atr[0], normalDis(*atr[1:]))
+
+def attributeMinMax(shortname:str):
+    """Retrieves a single attribute's minimum and maximum values. Returns (min, max)."""
+    for atr in masterList:
+        if atr[0].lower().startswith(shortname.lower()):
+            return (atr[3], atr[4])
