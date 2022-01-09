@@ -1,4 +1,5 @@
 import attributes
+from enum import Enum
 
 class CreationError(Exception):
     pass
@@ -27,6 +28,12 @@ class Player(object):
                 send += "\n"
         return send
 
+    def getAttribute(self, shortname:str):
+        for attr in self.attributes:
+            if attr.name.lower().startswith(shortname.lower()):
+                return attr.value
+        return None
+
     def __eq__(self, value):
         if isinstance(value, Player):
             return self.name == value.name
@@ -42,3 +49,24 @@ class Skater(Player):
 
 class Goalie(Player):
     """A hockey player that *is* a goalie."""
+
+class AtkAction(Enum):
+    SkateB = 0
+    SkateF = 1
+    SkateT = 2
+    SkateA = 3
+    PassS = 4
+    PassF = 5
+    PassB = 6
+    Dump = 7
+    ShotS = 8
+    ShotW = 9
+
+class DefAction(Enum):
+    Steal = 0
+    Poke = 1
+    BlockLn = 2
+    Body = 3
+    Force = 4
+    Pin = 5
+    BlockSlot = 6

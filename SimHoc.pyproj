@@ -23,6 +23,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="attributes.py" />
+    <Compile Include="game.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="skillContests.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="team.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="twitHandler.py">
       <SubType>Code</SubType>
     </Compile>

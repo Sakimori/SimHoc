@@ -76,11 +76,18 @@ class Attribute:
         
         
 
-def normalDis(generator:random.Random, mean:float, stdDev:float, min:float=-math.inf, max:float=math.inf) -> float:
-    """Generates random number from normal distribution with given mean and standard deviation. Optionally takes min and max values."""
+def seededNormalDis(generator:random.Random, mean:float, stdDev:float, min:float=-math.inf, max:float=math.inf) -> float:
+    """Generates random number from seeded normal distribution with given mean and standard deviation. Optionally takes min and max values."""
     num = generator.gauss(mean, stdDev)
     while min > num or num > max:
         num = generator.gauss(mean, stdDev)
+    return num
+
+def normalDis(mean:float, stdDev:float, min:float=-math.inf, max:float=math.inf) -> float:
+    """Generates random number from normal distribution with given mean and standard deviation. Optionally takes min and max values."""
+    num = random.gauss(mean, stdDev)
+    while min > num or num > max:
+        num = random.gauss(mean, stdDev)
     return num
 
 #Attributes to generate
@@ -92,9 +99,9 @@ masterList = [
     ["Strength", 40, 60, 0, 100], #power of slapshot/body checking (Defense)
     ["Dexterity", 50, 25, 10, 100], #power of wrist shot/dekes (Forward)
     ["Shot Accuracy", 40, 25, 10, 100], #accuracy on shots (Secondary/All Skaters)
-    ["Pass Accuracy", 60, 35, 0, 100], #does what you think it does (Defense)
-    ["Wisdom", 40, 50, 0, 100], #takes better shots/makes safer passes (Secondary/All)
-    ["Stickhandling", 50, 35, 0, 100], #dekes/checking (Secondary/All)
+    ["Pass Accuracy", 60, 20, 20, 100], #does what you think it does (Defense)
+    ["Wisdom", 60, 50, 0, 100], #takes better shots/makes safer passes (Secondary/All)
+    ["Stickhandling", 75, 20, 30, 100], #dekes/checking (Secondary/All) 35-95
     ["Discipline", 75, 60, 0, 100], #Higher means less penalties
     ["Intelligence", 50, 50, 0, 100], #Skill at positioning (as skater or goalie) (Secondary/All)
     ["Constitution", 60, 20, 0, 100] #Stamina/injury resilience
@@ -111,5 +118,5 @@ def attributesFromName(name:str):
     generator.seed(name)
     atrs = [versionNumber] #in case of stat changes, record which number to use
     for template in masterList:
-        atrs.append(Attribute(template[0], normalDis(generator, *template[1:])))
+        atrs.append(Attribute(template[0], seededNormalDis(generator, *template[1:])))
     return atrs
