@@ -1,6 +1,6 @@
 import os, player, tweepy, twitHandler, time, skillContests, random, itertools
 from attributes import normalDis
-from hocTests import AttributeTest
+from hocTests import AttributeTest, TestGame
 from hocUtils import RinkGraph
 
 
@@ -14,8 +14,8 @@ if __name__ == "__main__":
     #        print(atr)
     #    print("----------")
 
-    g = RinkGraph(edgeFilename="defaultedges.nx")
-    g.getNodeDebug('25')
+    g = TestGame()
+    g.faceoffTest()
 
 
     #twitter = twitHandler.TwitHandler()
