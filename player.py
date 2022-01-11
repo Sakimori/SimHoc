@@ -7,14 +7,17 @@ class CreationError(Exception):
 class Player(object):
     """A hockey player with attributes and various functions."""
 
-    def __init__(self, name:str):
+    def __init__(self, name:str, number:int=0):
         if name is None:
             self.attributes = []
         elif len(name) > 30:
             raise CreationError("Player name too long.")
+        elif number < 0 or number > 99:
+            raise CreationError("Player number not valid.")
         else:
             self.name = name
             self.attributes = self.loadAttributes()
+        self.number = number
 
     def loadAttributes(self):
         """Generates attributes based on name, or loads from database if present."""
@@ -53,13 +56,24 @@ class Player(object):
         else:
             return False
 
+    def __str__(self):
+        return f"#{str(self.number)} {self.initials()}"
+
+    def initials(self):
+        names = self.name.split()
+        outString = ""
+        for name in names:
+            outString += f"{name[0]}."
+        return outString
 
 class Skater(Player):
     """A hockey player that is not a goalie."""
+    pass
 
 
 class Goalie(Player):
     """A hockey player that *is* a goalie."""
+    pass
 
 class AtkAction(Enum):
     SkateB = 0
