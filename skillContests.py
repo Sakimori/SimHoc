@@ -14,7 +14,11 @@ class SkillContestParams(object):
     defStats = []
     override = None
 
-    def __init__(self, atkAction:AtkAction, defAction:DefAction, situation:Situations=Situations.EvenStrength):
+    def __init__(self, atkStats:list=[], defStats:list=[]):
+        self.atkStats = atkStats
+        self.defStats = defStats
+
+    def actionCheck(self, atkAction:AtkAction, defAction:DefAction, situation:Situations=Situations.EvenStrength):
         """Determines which skills to test, and how strongly."""
         if situation == Situations.EvenStrength:
             result = evenTable[atkAction.value][defAction.value]
