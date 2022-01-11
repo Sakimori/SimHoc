@@ -20,7 +20,7 @@ class Game(object):
 
             self.awayZones = RinkGraph(edgeFilename=DEFAULTRINKFILENAME)
             self.homeZones = RinkGraph(edgeFilename=DEFAULTRINKFILENAME)
-            self.currentZone:int = None
+            self.currentZone:str = None
             self.faceoffSpot = FaceoffDot.Center
             self.playStopped = True
 
@@ -45,6 +45,7 @@ class Game(object):
 
             self.period = 1
             self.clock = 60*20 #Time remaining in period, given in seconds
+            self.powerPlayEndTimes = []
 
             self.eventLog = []
             self.eventLogVerbose = []
@@ -64,6 +65,9 @@ class Game(object):
 
     def skatersInPossession(self):
         return self.skatersHome if self.homeAttacking() else self.skatersAway
+
+    def defendingGoalie(self):
+        return self.goalieAway if self.homeAttacking() else self.goalieHome
 
     def clockToMinutesSeconds(self):
         """Returns a string MM:SS elapsed in period."""
@@ -110,7 +114,7 @@ class Game(object):
             lookupList = [35, 15, 34, 14, 23, 32, 12, 31, 11]
         else:
             lookupList = [11, 31, 12, 32, 23, 14, 34, 15, 35]
-        return lookupList[self.faceoffSpot.value]
+        return str(lookupList[self.faceoffSpot.value])
 
     def event(self):
         """Meat and potatoes. Everything that happens is a direct result of this being called."""
@@ -124,6 +128,86 @@ class Game(object):
             self.eventLogVerbose.append(eventString)
             self.clock -= random.randint(2,5)
             self.currentZone = self.zoneAfterFaceoff()
+
+    def saveMadeStop(self, shootingPlayer, shotType):
+        """Stops play due to a save made by a goalie, and sets the faceoff dot to be used."""
+        self.playStopped = True
+        eventText = f"{self.clockToMinutesSeconds()} - {str(self.defendingGoalie)} saves shot from {str(shootingPlayer), stops play.}"
+        self.eventLog.append(eventText)
+        self.eventLogVerbose.append(eventText)
+        options = [FaceoffDot.AwayZoneLeft, FaceoffDot.AwayZoneRight] if self.homeAttacking() else [FaceoffDot.HomeZoneLeft, FaceoffDot.HomeZoneRight]
+        self.faceoffSpot = random.sample(options,1)[0]
+
+    def stopPlay(self):
+        """Stops play due to a knocked down puck, puck in the netting or benches, or otherwise generic call that needs the closest dot."""
+        self.playStopped = True
+        self.eventLogVerbose.append("Play whistled dead.")
+        if self.homeAttacking():
+            defenseDots = [FaceoffDot.HomeZoneRight, FaceoffDot.HomeZoneLeft]
+            neutralDefDots = [FaceoffDot.HomeNeutralRight, FaceoffDot.HomeNeutralLeft, FaceoffDot.Center]
+            neutralOffDots = [FaceoffDot.AwayNeutralRight, FaceoffDot.AwayNeutralLeft, FaceoffDot.Center]
+            offenseDots = [FaceoffDot.AwayZoneRight, FaceoffDot.AwayZoneLeft]
+        else:
+            offenseDots = [FaceoffDot.HomeZoneRight, FaceoffDot.HomeZoneLeft]
+            neutralOffDots = [FaceoffDot.HomeNeutralRight, FaceoffDot.HomeNeutralLeft, FaceoffDot.Center]
+            neutralDefDots = [FaceoffDot.AwayNeutralRight, FaceoffDot.AwayNeutralLeft, FaceoffDot.Center]
+            defenseDots = [FaceoffDot.AwayZoneRight, FaceoffDot.AwayZoneLeft]
+        if int(self.currentZone[1]) <= 2: #defensive end
+            dots = defenseDots
+        elif int(self.currentZone[1]) >= 5: #offensive end
+            dots = offenseDots
+        elif int(self.currentZone[1]) == 3:
+            dots = neutralDefDots
+        else:
+            dots = neutralOffDots
+        self.faceoffSpot = random.sample(dots, 1)[0]
+
+    def stopPlayOffsides(self):
+        """Stops play due to an offsides call."""
+        self.playStopped = True
+        eventText = f"{self.teamInPossession.shortname} goes offsides."
+        self.eventLog.append(eventText)
+        self.eventLogVerbose(eventText)
+        if self.homeAttacking():
+            dots = [FaceoffDot.AwayNeutralLeft, FaceoffDot.AwayNeutralRight]
+        else:
+            dots = [FaceoffDot.HomeNeutralLeft, FaceoffDot.HomeNeutralRight]
+        self.faceoffSpot = random.sample(dots, 1)[0]
+
+    def stopPlayIcing(self):
+        """Stops play due to an icing call."""
+        self.playStopped = True
+        eventText = f"{self.teamInPossession.shortname} ices the puck."
+        self.eventLog.append(eventText)
+        self.eventLogVerbose(eventText)
+        if self.homeAttacking():
+            dots = [FaceoffDot.HomeZoneLeft, FaceoffDot.HomeZoneRight]
+        else:
+            dots = [FaceoffDot.AwayZoneLeft, FaceoffDot.AwayZoneRight]
+        self.faceoffSpot = random.sample(dots, 1)[0]
+
+    def stopPlayPenalty(self, offendingPlayer:Player, penaltyText:str):
+        """Stops play due to an icing call."""
+        self.playStopped = True
+        ppTeam = self.home if self.away.isPlayerOnTeam(offendingPlayer) else self.away
+        eventText = f"{str(self.offendingPlayer)} is called for {penaltyText}. {ppTeam.shortname} is on the powerplay."
+        self.powerPlaySetup()
+        self.eventLog.append(eventText)
+        self.eventLogVerbose(eventText)
+        if self.homeAttacking():
+            dots = [FaceoffDot.HomeZoneLeft, FaceoffDot.HomeZoneRight]
+        else:
+            dots = [FaceoffDot.AwayZoneLeft, FaceoffDot.AwayZoneRight]
+        self.faceoffSpot = random.sample(dots, 1)[0]
+
+    def powerPlaySetup(self):
+        raise NotImplementedError()
+
+    def eventLogLength(self):
+        count = 0
+        for line in self.eventLog:
+            count += len(line)+1 #the extra 1 is for the newline at the end
+        return count
 
     def eventLogOut(self):
         outList = []
