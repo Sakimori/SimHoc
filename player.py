@@ -66,6 +66,12 @@ class Player(object):
             outString += f"{name[0]}."
         return outString
 
+    def chooseAtkAction(self):
+        raise NotImplementedError()
+
+    def chooseDefAction(self):
+        raise NotImplementedError()
+
 class Skater(Player):
     """A hockey player that is not a goalie."""
     pass
