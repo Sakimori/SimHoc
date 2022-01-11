@@ -11,7 +11,7 @@ class AttributeTest(object):
 
         self.fakeGame = game.Game(None, None)
 
-        self.params = skillContests.SkillContestParams(self.atkAction, self.defAction)
+        self.params = skillContests.SkillContestParams().actionCheck(self.atkAction, self.defAction)
 
     def lowStats(self):
         """Tests attacker and defender with minimum stats."""
@@ -87,3 +87,43 @@ class AttributeTest(object):
             print(self.defPlayer.getAttribute(attr))
         print(f"Success rate: {str(round(success/total*100,2))}%")
         print("-------")
+
+
+class TestGame(object):
+
+    def __init__(self):
+        awayRoster = [
+                player.Player("Laika", 93),
+                player.Player("Vivi", 16),
+                player.Player("Jorts", 75),
+                player.Player("Yuki", 23),
+                player.Player("Konecny", 96),
+                player.Player("Laika", 93),
+                player.Player("Vivi", 16),
+                player.Player("Jorts", 75),
+                player.Player("Yuki", 23),
+                player.Player("Konecny", 96)
+            ]
+        homeRoster = [
+                player.Player("Landeskog", 92),
+                player.Player("Byram", 4),
+                player.Player("MacKinnon", 29),
+                player.Player("Makar", 8),
+                player.Player("Rantanen", 96),
+                player.Player("Landeskog", 92),
+                player.Player("Byram", 4),
+                player.Player("MacKinnon", 29),
+                player.Player("Makar", 8),
+                player.Player("Rantanen", 96)
+            ]
+
+
+        aTeam = team.Team(awayRoster, [player.Player('Artemis', 17)], "Jorts Butter", "BTR")
+        hTeam = team.Team(homeRoster, [player.Player('Kuemper', 35)], "Colorado Avalanche", "COL")
+        self.Game = game.Game(aTeam, hTeam)
+
+    def faceoffTest(self):
+        for i in range(0,8):
+            self.Game.playStopped = True
+            foResult = self.Game.event()
+        pass

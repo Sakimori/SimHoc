@@ -129,3 +129,19 @@ class RinkGraph(object):
             if nodeDic['adjacent']:
                 adjacents.append(otherNodeName)
         return adjacents
+
+    def shotDanger(self, nodeName):
+        """Returns an int indicating the danger of a shot from that zone. 0 is no danger, 100 is 26-Offensive Low Slot"""
+        if isinstance(nodeName, int):
+            nodeName = str(nodeName)
+        
+        if int(nodeName[1]) < 5:
+            return 0
+        elif nodeName == '26':
+            return 100
+        elif nodeName == '25':
+            return 70
+        elif nodeName[0] in ['1','3'] or nodeName == '27': #27 is included for tuck/michigan
+            return 40
+        else:
+            return 20

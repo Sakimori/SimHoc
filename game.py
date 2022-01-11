@@ -1,6 +1,6 @@
-import random, team, player, os
+import random, team, player, os, math
 from team import Team
-from player import Player, AtkAction, DefAction
+from player import Player, AtkAction, DefAction, Skater, Goalie
 from skillContests import SkillContestParams, Situations
 from attributes import normalDis
 from hocUtils import RinkGraph
@@ -21,7 +21,8 @@ class Game(object):
             self.awayZones = RinkGraph(edgeFilename=DEFAULTRINKFILENAME)
             self.homeZones = RinkGraph(edgeFilename=DEFAULTRINKFILENAME)
             self.currentZone = None
-            self.faceoff = FaceoffDot.Center
+            self.faceoffSpot = FaceoffDot.Center
+            self.playStopped = True
 
             self.lineSize = 5 
             if len(awayTeam.roster) != 10 or len(homeTeam.roster) != 10 or threes:
@@ -30,11 +31,11 @@ class Game(object):
             self.goalieHome = self.home.chooseGoalie()
             self.goalieAway = self.away.chooseGoalie()
 
-            self.positionInPossession = None
+            self.positionInPossession = None #use SkaterPosition enum
             self.teamInPossession = None
 
-            self.skatersHome = [] #LW LD C RD RW, use the SkaterPosition enum for indexing.
-            self.skatersAway = []
+            self.skatersHome = self.home.roster[:5] #LW LD C RD RW, EA; use the SkaterPosition enum for indexing. Threes uses left winger, left defenseman, center.
+            self.skatersAway = self.away.roster[:5]
 
             self.penaltyBoxAway = []
             self.penaltyBoxHome = []
@@ -42,22 +43,35 @@ class Game(object):
             self.pulledGoalieHome = False
 
             self.period = 1
-            self.clock = 60*20 #clock will be given in seconds
+            self.clock = 60*20 #Time remaining in period, given in seconds
 
             self.eventLog = []
 
     def defendingTeam(self):
-        if teamInPossession == self.home:
+        if self.teamInPossession == self.home:
             return self.away
         else:
             return self.home
 
     def attackingTeam(self):
         """Alias for teamInPossession, to match defendingTeam()"""
-        return teamInPossession
+        return self.teamInPossession
 
     def homeAttacking(self):
-        return teamInPossession == self.home
+        return self.teamInPossession == self.home
+
+    def skatersInPossession(self):
+        return self.skatersHome if self.homeAttacking() else self.skatersAway
+
+    def clockToMinutesSeconds(self):
+        """Returns a string MM:SS elapsed in period."""
+        elapsedSeconds = 60*20 - self.clock if self.clock >= 0 else 60*20
+        minutes = str(int(math.modf(elapsedSeconds/60)[1]))
+        seconds = str(elapsedSeconds % 60)
+        if len(seconds) == 1:
+           seconds = f"0{seconds}"
+        return f"{minutes}:{seconds}"
+
 
     def currentSituation(self):
         skatersH = self.lineSize + self.pulledGoalieHome - len(self.penaltyBoxHome)
@@ -83,6 +97,22 @@ class Game(object):
             defRoll = normalDis(defValue, defValue/2, 0)
             return atkRoll-defRoll > 0
 
+    def faceoff(self, awayPlayer:Skater, homePlayer:Skater):
+        """Hold a faceoff! True indicates home win, False is away win."""
+        faceoffSkills = [('Dex',50),('Sti',50),('Pas', 10)]
+        params = SkillContestParams(faceoffSkills, faceoffSkills)
+        return self.skillContest(homePlayer, awayPlayer, params) if random.random() > 0.4 else random.sample([True, False], 1)[0]
+
+    def event(self):
+        """Meat and potatoes. Everything that happens is a direct result of this being called."""
+        if self.playStopped: #need a faceoff
+            self.teamInPossession = self.home if self.faceoff(self.skatersAway[SkaterPosition.C.value], self.skatersHome[SkaterPosition.C.value]) else self.away
+            self.positionInPossession = SkaterPosition(random.sample([0, 1, 1, 3, 3, 4],1)[0]) #wingers are less likely to recieve the faceoff than defensemen
+            self.playStopped = False
+            winningPlayer = self.skatersInPossession()[SkaterPosition.C.value]
+            self.eventLog.append(f"{self.clockToMinutesSeconds()} - {self.teamInPossession.shortname} {str(winningPlayer)} wins faceoff.")
+            self.clock -= random.randint(2,5)
+
 class FaceoffDot(Enum):
     """All orientations are given from the perspective of the defending team."""
     AwayZoneLeft = -4
@@ -102,3 +132,4 @@ class SkaterPosition(Enum):
     C = 2
     RD = 3
     RW = 4
+    EA = 5
