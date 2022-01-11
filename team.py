@@ -1,4 +1,4 @@
-import player
+from player import Skater, Goalie, Player
 from random import sample
 
 class Team(object):
@@ -13,6 +13,10 @@ class Team(object):
         self.goalies = goalies
         self.name = name
         self.shortname = shortname
+
+    def isPlayerOnTeam(self, player:Player):
+        return player in self.roster or player in self.goalies
+
 
     def chooseGoalie(self):
         return sample(self.goalies,1)
