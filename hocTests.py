@@ -102,7 +102,7 @@ class TestGame(object):
                 player.Player("Vivi", 16),
                 player.Player("Jorts", 75),
                 player.Player("Yuki", 23),
-                player.Player("Konecny", 96)
+                player.Player("Konecny", 11)
             ]
         homeRoster = [
                 player.Player("Landeskog", 92),
@@ -118,12 +118,13 @@ class TestGame(object):
             ]
 
 
-        aTeam = team.Team(awayRoster, [player.Player('Artemis', 17)], "Jorts Butter", "BTR")
+        aTeam = team.Team(awayRoster, [player.Player('Artemis', 17)], "Vail Powder", "PDR")
         hTeam = team.Team(homeRoster, [player.Player('Kuemper', 35)], "Colorado Avalanche", "COL")
         self.Game = game.Game(aTeam, hTeam)
 
     def faceoffTest(self):
         for i in range(0,8):
             self.Game.playStopped = True
-            foResult = self.Game.event()
+            foResult = self.Game.event() #this doesnt return anything but it's nice to know what it's for I guess
+        lines = self.Game.eventLogOut()
         pass

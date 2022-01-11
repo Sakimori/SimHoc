@@ -20,7 +20,7 @@ class Game(object):
 
             self.awayZones = RinkGraph(edgeFilename=DEFAULTRINKFILENAME)
             self.homeZones = RinkGraph(edgeFilename=DEFAULTRINKFILENAME)
-            self.currentZone = None
+            self.currentZone:int = None
             self.faceoffSpot = FaceoffDot.Center
             self.playStopped = True
 
@@ -33,6 +33,7 @@ class Game(object):
 
             self.positionInPossession = None #use SkaterPosition enum
             self.teamInPossession = None
+            self.loosePuck = False
 
             self.skatersHome = self.home.roster[:5] #LW LD C RD RW, EA; use the SkaterPosition enum for indexing. Threes uses left winger, left defenseman, center.
             self.skatersAway = self.away.roster[:5]
@@ -46,6 +47,7 @@ class Game(object):
             self.clock = 60*20 #Time remaining in period, given in seconds
 
             self.eventLog = []
+            self.eventLogVerbose = []
 
     def defendingTeam(self):
         if self.teamInPossession == self.home:
@@ -97,33 +99,49 @@ class Game(object):
             defRoll = normalDis(defValue, defValue/2, 0)
             return atkRoll-defRoll > 0
 
-    def faceoff(self, awayPlayer:Skater, homePlayer:Skater):
+    def faceoffContest(self, awayPlayer:Skater, homePlayer:Skater):
         """Hold a faceoff! True indicates home win, False is away win."""
         faceoffSkills = [('Dex',50),('Sti',50),('Pas', 10)]
         params = SkillContestParams(faceoffSkills, faceoffSkills)
         return self.skillContest(homePlayer, awayPlayer, params) if random.random() > 0.4 else random.sample([True, False], 1)[0]
 
+    def zoneAfterFaceoff(self):
+        if self.homeAttacking():
+            lookupList = [35, 15, 34, 14, 23, 32, 12, 31, 11]
+        else:
+            lookupList = [11, 31, 12, 32, 23, 14, 34, 15, 35]
+        return lookupList[self.faceoffSpot.value]
+
     def event(self):
         """Meat and potatoes. Everything that happens is a direct result of this being called."""
         if self.playStopped: #need a faceoff
-            self.teamInPossession = self.home if self.faceoff(self.skatersAway[SkaterPosition.C.value], self.skatersHome[SkaterPosition.C.value]) else self.away
+            self.teamInPossession = self.home if self.faceoffContest(self.skatersAway[SkaterPosition.C.value], self.skatersHome[SkaterPosition.C.value]) else self.away
             self.positionInPossession = SkaterPosition(random.sample([0, 1, 1, 3, 3, 4],1)[0]) #wingers are less likely to recieve the faceoff than defensemen
             self.playStopped = False
             winningPlayer = self.skatersInPossession()[SkaterPosition.C.value]
-            self.eventLog.append(f"{self.clockToMinutesSeconds()} - {self.teamInPossession.shortname} {str(winningPlayer)} wins faceoff.")
+            eventString = f"{self.clockToMinutesSeconds()} - {self.teamInPossession.shortname} {str(winningPlayer)} wins faceoff."
+            self.eventLog.append(eventString)
+            self.eventLogVerbose.append(eventString)
             self.clock -= random.randint(2,5)
+            self.currentZone = self.zoneAfterFaceoff()
+
+    def eventLogOut(self):
+        outList = []
+        while len(self.eventLog) > 0:
+            outList.append(self.eventLog.pop(0))
+        return outList
 
 class FaceoffDot(Enum):
     """All orientations are given from the perspective of the defending team."""
-    AwayZoneLeft = -4
-    AwayZoneRight = -3
-    AwayNeutralLeft = -2
-    AwayNeutralRight = -1
-    Center = 0
-    HomeNeutralRight = 1
-    HomeNeutralLeft = 2
-    HomeZoneRight = 3
-    HomeZoneLeft = 4
+    AwayZoneLeft = 0
+    AwayZoneRight = 1
+    AwayNeutralLeft = 2
+    AwayNeutralRight = 3
+    Center = 4
+    HomeNeutralRight = 5
+    HomeNeutralLeft = 6
+    HomeZoneRight = 7
+    HomeZoneLeft = 8
 
 class SkaterPosition(Enum):
     """Allows easy indexing to the active skaters lists for each team."""
