@@ -1,6 +1,10 @@
-import os, player, tweepy, twitHandler, time, skillContests, random
+import os, player, tweepy, twitHandler, time, skillContests, random, itertools
 from attributes import normalDis
 from hocTests import AttributeTest
+from hocUtils import RinkGraph
+
+
+
 
 if __name__ == "__main__":
     #for name in ["Vivi", "Artemis", "Laika", "Sharks", "Dragons", "Melua", "Sabriina", "Jorts (Buttered)", "Jorts (Unbuttered)"]:
@@ -10,8 +14,9 @@ if __name__ == "__main__":
     #        print(atr)
     #    print("----------")
 
-    test = AttributeTest()
-    test.allTests()
+    g = RinkGraph(edgeFilename="defaultedges.nx")
+    g.getNodeDebug('25')
+
 
     #twitter = twitHandler.TwitHandler()
     #if os.path.exists(os.path.join("Data", "lastID.twt")):

@@ -29,6 +29,9 @@
     <Compile Include="hocTests.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="hocUtils.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="skillContests.py">
       <SubType>Code</SubType>
     </Compile>
@@ -59,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="Rinks\" />
+    <Folder Include="Rinks\Backgrounds\" />
+    <Folder Include="Rinks\Graphs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\s options.txt" />

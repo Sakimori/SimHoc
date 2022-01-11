@@ -1,0 +1,1260 @@
+01 02 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+01 03 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+01 04 {'actions': [], 'adjacent': 0}
+01 05 {'actions': ['PassS'], 'adjacent': 0}
+01 06 {'actions': [], 'adjacent': 0}
+01 10 {'actions': ['SkateB'], 'adjacent': 1}
+01 11 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+01 12 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+01 13 {'actions': ['PassF'], 'adjacent': 0}
+01 14 {'actions': [], 'adjacent': 0}
+01 15 {'actions': ['PassS'], 'adjacent': 0}
+01 16 {'actions': [], 'adjacent': 0}
+01 17 {'actions': [], 'adjacent': 0}
+01 20 {'actions': [], 'adjacent': 0}
+01 21 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+01 22 {'actions': ['PassF'], 'adjacent': 0}
+01 23 {'actions': ['PassF'], 'adjacent': 0}
+01 24 {'actions': [], 'adjacent': 0}
+01 25 {'actions': ['PassS'], 'adjacent': 0}
+01 26 {'actions': [], 'adjacent': 0}
+01 27 {'actions': [], 'adjacent': 0}
+01 30 {'actions': [], 'adjacent': 0}
+01 31 {'actions': ['PassF'], 'adjacent': 0}
+01 32 {'actions': ['PassF'], 'adjacent': 0}
+01 33 {'actions': ['PassF'], 'adjacent': 0}
+01 34 {'actions': [], 'adjacent': 0}
+01 35 {'actions': ['PassS'], 'adjacent': 0}
+01 36 {'actions': [], 'adjacent': 0}
+01 37 {'actions': [], 'adjacent': 0}
+01 41 {'actions': ['PassF'], 'adjacent': 0}
+01 42 {'actions': ['PassF'], 'adjacent': 0}
+01 43 {'actions': ['PassF'], 'adjacent': 0}
+01 44 {'actions': [], 'adjacent': 0}
+01 45 {'actions': ['PassS'], 'adjacent': 0}
+01 46 {'actions': [], 'adjacent': 0}
+02 01 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+02 03 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+02 04 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+02 05 {'actions': ['PassS'], 'adjacent': 0}
+02 06 {'actions': [], 'adjacent': 0}
+02 10 {'actions': [], 'adjacent': 0}
+02 11 {'actions': ['SkateB'], 'adjacent': 0}
+02 12 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+02 13 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+02 14 {'actions': ['PassF'], 'adjacent': 0}
+02 15 {'actions': ['PassS'], 'adjacent': 0}
+02 16 {'actions': [], 'adjacent': 0}
+02 17 {'actions': [], 'adjacent': 0}
+02 20 {'actions': [], 'adjacent': 0}
+02 21 {'actions': [], 'adjacent': 0}
+02 22 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+02 23 {'actions': ['PassF'], 'adjacent': 0}
+02 24 {'actions': ['PassF'], 'adjacent': 0}
+02 25 {'actions': ['PassS'], 'adjacent': 0}
+02 26 {'actions': [], 'adjacent': 0}
+02 27 {'actions': [], 'adjacent': 0}
+02 30 {'actions': [], 'adjacent': 0}
+02 31 {'actions': [], 'adjacent': 0}
+02 32 {'actions': ['PassF'], 'adjacent': 0}
+02 33 {'actions': ['PassF'], 'adjacent': 0}
+02 34 {'actions': ['PassF'], 'adjacent': 0}
+02 35 {'actions': ['PassS'], 'adjacent': 0}
+02 36 {'actions': [], 'adjacent': 0}
+02 37 {'actions': [], 'adjacent': 0}
+02 41 {'actions': [], 'adjacent': 0}
+02 42 {'actions': ['PassF'], 'adjacent': 0}
+02 43 {'actions': ['PassF'], 'adjacent': 0}
+02 44 {'actions': ['PassF'], 'adjacent': 0}
+02 45 {'actions': ['PassS'], 'adjacent': 0}
+02 46 {'actions': [], 'adjacent': 0}
+03 01 {'actions': [], 'adjacent': 0}
+03 02 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+03 04 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+03 05 {'actions': ['PassF'], 'adjacent': 0}
+03 06 {'actions': [], 'adjacent': 0}
+03 10 {'actions': [], 'adjacent': 0}
+03 11 {'actions': [], 'adjacent': 0}
+03 12 {'actions': ['SkateB'], 'adjacent': 0}
+03 13 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+03 14 {'actions': ['PassF'], 'adjacent': 0}
+03 15 {'actions': ['PassF'], 'adjacent': 0}
+03 16 {'actions': [], 'adjacent': 0}
+03 17 {'actions': [], 'adjacent': 0}
+03 20 {'actions': [], 'adjacent': 0}
+03 21 {'actions': [], 'adjacent': 0}
+03 22 {'actions': [], 'adjacent': 0}
+03 23 {'actions': ['PassF'], 'adjacent': 0}
+03 24 {'actions': ['PassF'], 'adjacent': 0}
+03 25 {'actions': ['PassF'], 'adjacent': 0}
+03 26 {'actions': [], 'adjacent': 0}
+03 27 {'actions': [], 'adjacent': 0}
+03 30 {'actions': [], 'adjacent': 0}
+03 31 {'actions': [], 'adjacent': 0}
+03 32 {'actions': [], 'adjacent': 0}
+03 33 {'actions': ['PassF'], 'adjacent': 0}
+03 34 {'actions': ['PassF'], 'adjacent': 0}
+03 35 {'actions': ['PassF'], 'adjacent': 0}
+03 36 {'actions': [], 'adjacent': 0}
+03 37 {'actions': [], 'adjacent': 0}
+03 41 {'actions': [], 'adjacent': 0}
+03 42 {'actions': [], 'adjacent': 0}
+03 43 {'actions': ['PassF'], 'adjacent': 0}
+03 44 {'actions': ['PassF'], 'adjacent': 0}
+03 45 {'actions': ['PassF'], 'adjacent': 0}
+03 46 {'actions': [], 'adjacent': 0}
+04 01 {'actions': [], 'adjacent': 0}
+04 02 {'actions': [], 'adjacent': 0}
+04 03 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+04 05 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+04 06 {'actions': [], 'adjacent': 0}
+04 10 {'actions': [], 'adjacent': 0}
+04 11 {'actions': [], 'adjacent': 0}
+04 12 {'actions': [], 'adjacent': 0}
+04 13 {'actions': ['SkateB'], 'adjacent': 0}
+04 14 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+04 15 {'actions': ['PassF'], 'adjacent': 0}
+04 16 {'actions': [], 'adjacent': 0}
+04 17 {'actions': [], 'adjacent': 0}
+04 20 {'actions': [], 'adjacent': 0}
+04 21 {'actions': [], 'adjacent': 0}
+04 22 {'actions': [], 'adjacent': 0}
+04 23 {'actions': [], 'adjacent': 0}
+04 24 {'actions': ['PassF'], 'adjacent': 0}
+04 25 {'actions': ['PassF'], 'adjacent': 0}
+04 26 {'actions': [], 'adjacent': 0}
+04 27 {'actions': [], 'adjacent': 0}
+04 30 {'actions': [], 'adjacent': 0}
+04 31 {'actions': [], 'adjacent': 0}
+04 32 {'actions': [], 'adjacent': 0}
+04 33 {'actions': [], 'adjacent': 0}
+04 34 {'actions': ['PassF'], 'adjacent': 0}
+04 35 {'actions': ['PassF'], 'adjacent': 0}
+04 36 {'actions': [], 'adjacent': 0}
+04 37 {'actions': [], 'adjacent': 0}
+04 41 {'actions': [], 'adjacent': 0}
+04 42 {'actions': [], 'adjacent': 0}
+04 43 {'actions': [], 'adjacent': 0}
+04 44 {'actions': ['PassF'], 'adjacent': 0}
+04 45 {'actions': ['PassF'], 'adjacent': 0}
+04 46 {'actions': [], 'adjacent': 0}
+05 01 {'actions': [], 'adjacent': 0}
+05 02 {'actions': [], 'adjacent': 0}
+05 03 {'actions': [], 'adjacent': 0}
+05 04 {'actions': [], 'adjacent': 1}
+05 06 {'actions': ['PassF'], 'adjacent': 1}
+05 10 {'actions': [], 'adjacent': 0}
+05 11 {'actions': [], 'adjacent': 0}
+05 12 {'actions': [], 'adjacent': 0}
+05 13 {'actions': [], 'adjacent': 0}
+05 14 {'actions': [], 'adjacent': 0}
+05 15 {'actions': ['PassF'], 'adjacent': 1}
+05 16 {'actions': ['SkateT', 'PassF'], 'adjacent': 0}
+05 17 {'actions': ['PassF'], 'adjacent': 0}
+05 20 {'actions': [], 'adjacent': 0}
+05 21 {'actions': [], 'adjacent': 0}
+05 22 {'actions': [], 'adjacent': 0}
+05 23 {'actions': [], 'adjacent': 0}
+05 24 {'actions': [], 'adjacent': 0}
+05 25 {'actions': ['PassF'], 'adjacent': 0}
+05 26 {'actions': ['PassF'], 'adjacent': 0}
+05 27 {'actions': ['SkateA', 'PassF'], 'adjacent': 0}
+05 30 {'actions': [], 'adjacent': 0}
+05 31 {'actions': [], 'adjacent': 0}
+05 32 {'actions': [], 'adjacent': 0}
+05 33 {'actions': [], 'adjacent': 0}
+05 34 {'actions': [], 'adjacent': 0}
+05 35 {'actions': ['PassF'], 'adjacent': 0}
+05 36 {'actions': ['PassF'], 'adjacent': 0}
+05 37 {'actions': ['PassF'], 'adjacent': 0}
+05 41 {'actions': [], 'adjacent': 0}
+05 42 {'actions': [], 'adjacent': 0}
+05 43 {'actions': [], 'adjacent': 0}
+05 44 {'actions': [], 'adjacent': 0}
+05 45 {'actions': ['PassF'], 'adjacent': 0}
+05 46 {'actions': ['PassF'], 'adjacent': 0}
+06 01 {'actions': [], 'adjacent': 0}
+06 02 {'actions': [], 'adjacent': 0}
+06 03 {'actions': [], 'adjacent': 0}
+06 04 {'actions': [], 'adjacent': 0}
+06 05 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+06 10 {'actions': [], 'adjacent': 0}
+06 11 {'actions': [], 'adjacent': 0}
+06 12 {'actions': [], 'adjacent': 0}
+06 13 {'actions': [], 'adjacent': 0}
+06 14 {'actions': [], 'adjacent': 0}
+06 15 {'actions': ['SkateB'], 'adjacent': 0}
+06 16 {'actions': ['SkateT', 'PassF'], 'adjacent': 1}
+06 17 {'actions': ['PassF'], 'adjacent': 1}
+06 20 {'actions': [], 'adjacent': 0}
+06 21 {'actions': [], 'adjacent': 0}
+06 22 {'actions': [], 'adjacent': 0}
+06 23 {'actions': [], 'adjacent': 0}
+06 24 {'actions': [], 'adjacent': 0}
+06 25 {'actions': [], 'adjacent': 0}
+06 26 {'actions': ['PassF'], 'adjacent': 0}
+06 27 {'actions': ['SkateA', 'PassF'], 'adjacent': 0}
+06 30 {'actions': [], 'adjacent': 0}
+06 31 {'actions': [], 'adjacent': 0}
+06 32 {'actions': [], 'adjacent': 0}
+06 33 {'actions': [], 'adjacent': 0}
+06 34 {'actions': [], 'adjacent': 0}
+06 35 {'actions': [], 'adjacent': 0}
+06 36 {'actions': ['PassF'], 'adjacent': 0}
+06 37 {'actions': ['PassF'], 'adjacent': 0}
+06 41 {'actions': [], 'adjacent': 0}
+06 42 {'actions': [], 'adjacent': 0}
+06 43 {'actions': [], 'adjacent': 0}
+06 44 {'actions': [], 'adjacent': 0}
+06 45 {'actions': [], 'adjacent': 0}
+06 46 {'actions': ['PassF'], 'adjacent': 0}
+10 01 {'actions': ['SkateF'], 'adjacent': 1}
+10 02 {'actions': [], 'adjacent': 0}
+10 03 {'actions': [], 'adjacent': 0}
+10 04 {'actions': [], 'adjacent': 0}
+10 05 {'actions': [], 'adjacent': 0}
+10 06 {'actions': [], 'adjacent': 0}
+10 11 {'actions': ['SkateF'], 'adjacent': 1}
+10 12 {'actions': ['SkateF'], 'adjacent': 0}
+10 13 {'actions': [], 'adjacent': 0}
+10 14 {'actions': [], 'adjacent': 0}
+10 15 {'actions': [], 'adjacent': 0}
+10 16 {'actions': [], 'adjacent': 0}
+10 17 {'actions': [], 'adjacent': 0}
+10 20 {'actions': ['SkateF'], 'adjacent': 1}
+10 21 {'actions': ['SkateF'], 'adjacent': 0}
+10 22 {'actions': [], 'adjacent': 0}
+10 23 {'actions': [], 'adjacent': 0}
+10 24 {'actions': [], 'adjacent': 0}
+10 25 {'actions': [], 'adjacent': 0}
+10 26 {'actions': [], 'adjacent': 0}
+10 27 {'actions': [], 'adjacent': 0}
+10 30 {'actions': ['SkateF'], 'adjacent': 0}
+10 31 {'actions': [], 'adjacent': 0}
+10 32 {'actions': [], 'adjacent': 0}
+10 33 {'actions': [], 'adjacent': 0}
+10 34 {'actions': [], 'adjacent': 0}
+10 35 {'actions': [], 'adjacent': 0}
+10 36 {'actions': [], 'adjacent': 0}
+10 37 {'actions': [], 'adjacent': 0}
+10 41 {'actions': [], 'adjacent': 0}
+10 42 {'actions': [], 'adjacent': 0}
+10 43 {'actions': [], 'adjacent': 0}
+10 44 {'actions': [], 'adjacent': 0}
+10 45 {'actions': [], 'adjacent': 0}
+10 46 {'actions': [], 'adjacent': 0}
+11 01 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+11 02 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+11 03 {'actions': ['PassF'], 'adjacent': 0}
+11 04 {'actions': [], 'adjacent': 0}
+11 05 {'actions': ['PassS'], 'adjacent': 0}
+11 06 {'actions': [], 'adjacent': 0}
+11 10 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+11 12 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+11 13 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+11 14 {'actions': [], 'adjacent': 0}
+11 15 {'actions': ['PassS'], 'adjacent': 0}
+11 16 {'actions': [], 'adjacent': 0}
+11 17 {'actions': [], 'adjacent': 0}
+11 20 {'actions': ['SkateB'], 'adjacent': 0}
+11 21 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+11 22 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+11 23 {'actions': ['PassF'], 'adjacent': 0}
+11 24 {'actions': [], 'adjacent': 0}
+11 25 {'actions': ['PassS'], 'adjacent': 0}
+11 26 {'actions': [], 'adjacent': 0}
+11 27 {'actions': [], 'adjacent': 0}
+11 30 {'actions': [], 'adjacent': 0}
+11 31 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+11 32 {'actions': ['PassF'], 'adjacent': 0}
+11 33 {'actions': ['PassF'], 'adjacent': 0}
+11 34 {'actions': [], 'adjacent': 0}
+11 35 {'actions': ['PassS'], 'adjacent': 0}
+11 36 {'actions': [], 'adjacent': 0}
+11 37 {'actions': [], 'adjacent': 0}
+11 41 {'actions': ['PassF'], 'adjacent': 0}
+11 42 {'actions': ['PassF'], 'adjacent': 0}
+11 43 {'actions': ['PassF'], 'adjacent': 0}
+11 44 {'actions': [], 'adjacent': 0}
+11 45 {'actions': ['PassS'], 'adjacent': 0}
+11 46 {'actions': [], 'adjacent': 0}
+12 01 {'actions': ['SkateB'], 'adjacent': 0}
+12 02 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+12 03 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+12 04 {'actions': ['PassF'], 'adjacent': 0}
+12 05 {'actions': ['PassS'], 'adjacent': 0}
+12 06 {'actions': [], 'adjacent': 0}
+12 10 {'actions': [], 'adjacent': 0}
+12 11 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+12 13 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+12 14 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+12 15 {'actions': ['PassS'], 'adjacent': 0}
+12 16 {'actions': [], 'adjacent': 0}
+12 17 {'actions': [], 'adjacent': 0}
+12 20 {'actions': [], 'adjacent': 0}
+12 21 {'actions': ['SkateB'], 'adjacent': 0}
+12 22 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+12 23 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+12 24 {'actions': ['PassF'], 'adjacent': 0}
+12 25 {'actions': ['PassS'], 'adjacent': 0}
+12 26 {'actions': [], 'adjacent': 0}
+12 27 {'actions': [], 'adjacent': 0}
+12 30 {'actions': [], 'adjacent': 0}
+12 31 {'actions': [], 'adjacent': 0}
+12 32 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+12 33 {'actions': ['PassF'], 'adjacent': 0}
+12 34 {'actions': ['PassF'], 'adjacent': 0}
+12 35 {'actions': ['PassS'], 'adjacent': 0}
+12 36 {'actions': [], 'adjacent': 0}
+12 37 {'actions': [], 'adjacent': 0}
+12 41 {'actions': [], 'adjacent': 0}
+12 42 {'actions': ['PassF'], 'adjacent': 0}
+12 43 {'actions': ['PassF'], 'adjacent': 0}
+12 44 {'actions': ['PassF'], 'adjacent': 0}
+12 45 {'actions': ['PassS'], 'adjacent': 0}
+12 46 {'actions': [], 'adjacent': 0}
+13 01 {'actions': [], 'adjacent': 0}
+13 02 {'actions': ['SkateB'], 'adjacent': 0}
+13 03 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+13 04 {'actions': ['PassF'], 'adjacent': 0}
+13 05 {'actions': ['PassF'], 'adjacent': 0}
+13 06 {'actions': [], 'adjacent': 0}
+13 10 {'actions': [], 'adjacent': 0}
+13 11 {'actions': [], 'adjacent': 0}
+13 12 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+13 14 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+13 15 {'actions': ['PassF'], 'adjacent': 0}
+13 16 {'actions': [], 'adjacent': 0}
+13 17 {'actions': [], 'adjacent': 0}
+13 20 {'actions': [], 'adjacent': 0}
+13 21 {'actions': [], 'adjacent': 0}
+13 22 {'actions': ['SkateB'], 'adjacent': 0}
+13 23 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+13 24 {'actions': ['PassF'], 'adjacent': 0}
+13 25 {'actions': ['PassF'], 'adjacent': 0}
+13 26 {'actions': [], 'adjacent': 0}
+13 27 {'actions': [], 'adjacent': 0}
+13 30 {'actions': [], 'adjacent': 0}
+13 31 {'actions': [], 'adjacent': 0}
+13 32 {'actions': [], 'adjacent': 0}
+13 33 {'actions': ['PassF'], 'adjacent': 0}
+13 34 {'actions': ['PassF'], 'adjacent': 0}
+13 35 {'actions': ['PassF'], 'adjacent': 0}
+13 36 {'actions': [], 'adjacent': 0}
+13 37 {'actions': [], 'adjacent': 0}
+13 41 {'actions': [], 'adjacent': 0}
+13 42 {'actions': [], 'adjacent': 0}
+13 43 {'actions': ['PassF'], 'adjacent': 0}
+13 44 {'actions': ['PassF'], 'adjacent': 0}
+13 45 {'actions': ['PassF'], 'adjacent': 0}
+13 46 {'actions': [], 'adjacent': 0}
+14 01 {'actions': [], 'adjacent': 0}
+14 02 {'actions': [], 'adjacent': 0}
+14 03 {'actions': ['SkateB'], 'adjacent': 0}
+14 04 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+14 05 {'actions': ['PassF'], 'adjacent': 0}
+14 06 {'actions': [], 'adjacent': 0}
+14 10 {'actions': [], 'adjacent': 0}
+14 11 {'actions': [], 'adjacent': 0}
+14 12 {'actions': [], 'adjacent': 0}
+14 13 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+14 15 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+14 16 {'actions': [], 'adjacent': 0}
+14 17 {'actions': [], 'adjacent': 0}
+14 20 {'actions': [], 'adjacent': 0}
+14 21 {'actions': [], 'adjacent': 0}
+14 22 {'actions': [], 'adjacent': 0}
+14 23 {'actions': ['SkateB'], 'adjacent': 0}
+14 24 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+14 25 {'actions': ['PassF'], 'adjacent': 0}
+14 26 {'actions': [], 'adjacent': 0}
+14 27 {'actions': [], 'adjacent': 0}
+14 30 {'actions': [], 'adjacent': 0}
+14 31 {'actions': [], 'adjacent': 0}
+14 32 {'actions': [], 'adjacent': 0}
+14 33 {'actions': [], 'adjacent': 0}
+14 34 {'actions': ['PassF'], 'adjacent': 0}
+14 35 {'actions': ['PassF'], 'adjacent': 0}
+14 36 {'actions': [], 'adjacent': 0}
+14 37 {'actions': [], 'adjacent': 0}
+14 41 {'actions': [], 'adjacent': 0}
+14 42 {'actions': [], 'adjacent': 0}
+14 43 {'actions': [], 'adjacent': 0}
+14 44 {'actions': ['PassF'], 'adjacent': 0}
+14 45 {'actions': ['PassF'], 'adjacent': 0}
+14 46 {'actions': [], 'adjacent': 0}
+15 01 {'actions': [], 'adjacent': 0}
+15 02 {'actions': [], 'adjacent': 0}
+15 03 {'actions': [], 'adjacent': 0}
+15 04 {'actions': [], 'adjacent': 0}
+15 05 {'actions': ['PassF'], 'adjacent': 1}
+15 06 {'actions': ['PassF'], 'adjacent': 0}
+15 10 {'actions': [], 'adjacent': 0}
+15 11 {'actions': [], 'adjacent': 0}
+15 12 {'actions': [], 'adjacent': 0}
+15 13 {'actions': [], 'adjacent': 0}
+15 14 {'actions': [], 'adjacent': 1}
+15 16 {'actions': ['PassF'], 'adjacent': 1}
+15 17 {'actions': ['PassF'], 'adjacent': 0}
+15 20 {'actions': [], 'adjacent': 0}
+15 21 {'actions': [], 'adjacent': 0}
+15 22 {'actions': [], 'adjacent': 0}
+15 23 {'actions': [], 'adjacent': 0}
+15 24 {'actions': [], 'adjacent': 0}
+15 25 {'actions': ['PassF'], 'adjacent': 1}
+15 26 {'actions': ['SkateT', 'PassF'], 'adjacent': 0}
+15 27 {'actions': ['SkateA', 'PassF'], 'adjacent': 0}
+15 30 {'actions': [], 'adjacent': 0}
+15 31 {'actions': [], 'adjacent': 0}
+15 32 {'actions': [], 'adjacent': 0}
+15 33 {'actions': [], 'adjacent': 0}
+15 34 {'actions': [], 'adjacent': 0}
+15 35 {'actions': ['PassF'], 'adjacent': 0}
+15 36 {'actions': ['PassF'], 'adjacent': 0}
+15 37 {'actions': ['PassF'], 'adjacent': 0}
+15 41 {'actions': [], 'adjacent': 0}
+15 42 {'actions': [], 'adjacent': 0}
+15 43 {'actions': [], 'adjacent': 0}
+15 44 {'actions': [], 'adjacent': 0}
+15 45 {'actions': ['PassF'], 'adjacent': 0}
+15 46 {'actions': ['PassF'], 'adjacent': 0}
+16 01 {'actions': [], 'adjacent': 0}
+16 02 {'actions': [], 'adjacent': 0}
+16 03 {'actions': [], 'adjacent': 0}
+16 04 {'actions': [], 'adjacent': 0}
+16 05 {'actions': ['SkateB'], 'adjacent': 0}
+16 06 {'actions': ['PassF'], 'adjacent': 1}
+16 10 {'actions': [], 'adjacent': 0}
+16 11 {'actions': [], 'adjacent': 0}
+16 12 {'actions': [], 'adjacent': 0}
+16 13 {'actions': [], 'adjacent': 0}
+16 14 {'actions': [], 'adjacent': 0}
+16 15 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+16 17 {'actions': ['PassF'], 'adjacent': 1}
+16 20 {'actions': [], 'adjacent': 0}
+16 21 {'actions': [], 'adjacent': 0}
+16 22 {'actions': [], 'adjacent': 0}
+16 23 {'actions': [], 'adjacent': 0}
+16 24 {'actions': [], 'adjacent': 0}
+16 25 {'actions': ['SkateB'], 'adjacent': 0}
+16 26 {'actions': ['SkateT', 'PassF'], 'adjacent': 1}
+16 27 {'actions': ['SkateA', 'PassF'], 'adjacent': 0}
+16 30 {'actions': [], 'adjacent': 0}
+16 31 {'actions': [], 'adjacent': 0}
+16 32 {'actions': [], 'adjacent': 0}
+16 33 {'actions': [], 'adjacent': 0}
+16 34 {'actions': [], 'adjacent': 0}
+16 35 {'actions': [], 'adjacent': 0}
+16 36 {'actions': ['PassF'], 'adjacent': 0}
+16 37 {'actions': ['PassF'], 'adjacent': 0}
+16 41 {'actions': [], 'adjacent': 0}
+16 42 {'actions': [], 'adjacent': 0}
+16 43 {'actions': [], 'adjacent': 0}
+16 44 {'actions': [], 'adjacent': 0}
+16 45 {'actions': [], 'adjacent': 0}
+16 46 {'actions': ['PassF'], 'adjacent': 0}
+17 01 {'actions': [], 'adjacent': 0}
+17 02 {'actions': [], 'adjacent': 0}
+17 03 {'actions': [], 'adjacent': 0}
+17 04 {'actions': [], 'adjacent': 0}
+17 05 {'actions': ['PassF'], 'adjacent': 0}
+17 06 {'actions': ['PassF'], 'adjacent': 1}
+17 10 {'actions': [], 'adjacent': 0}
+17 11 {'actions': [], 'adjacent': 0}
+17 12 {'actions': [], 'adjacent': 0}
+17 13 {'actions': [], 'adjacent': 0}
+17 14 {'actions': [], 'adjacent': 0}
+17 15 {'actions': ['PassF'], 'adjacent': 0}
+17 16 {'actions': ['PassF'], 'adjacent': 1}
+17 20 {'actions': [], 'adjacent': 0}
+17 21 {'actions': [], 'adjacent': 0}
+17 22 {'actions': [], 'adjacent': 0}
+17 23 {'actions': [], 'adjacent': 0}
+17 24 {'actions': [], 'adjacent': 0}
+17 25 {'actions': ['PassF'], 'adjacent': 0}
+17 26 {'actions': ['SkateT', 'PassF'], 'adjacent': 0}
+17 27 {'actions': [], 'adjacent': 1}
+17 30 {'actions': [], 'adjacent': 0}
+17 31 {'actions': [], 'adjacent': 0}
+17 32 {'actions': [], 'adjacent': 0}
+17 33 {'actions': [], 'adjacent': 0}
+17 34 {'actions': [], 'adjacent': 0}
+17 35 {'actions': ['PassF'], 'adjacent': 0}
+17 36 {'actions': ['PassF'], 'adjacent': 0}
+17 37 {'actions': [], 'adjacent': 0}
+17 41 {'actions': [], 'adjacent': 0}
+17 42 {'actions': [], 'adjacent': 0}
+17 43 {'actions': [], 'adjacent': 0}
+17 44 {'actions': [], 'adjacent': 0}
+17 45 {'actions': ['PassF'], 'adjacent': 0}
+17 46 {'actions': ['PassF'], 'adjacent': 0}
+20 01 {'actions': [], 'adjacent': 0}
+20 02 {'actions': [], 'adjacent': 0}
+20 03 {'actions': [], 'adjacent': 0}
+20 04 {'actions': [], 'adjacent': 0}
+20 05 {'actions': [], 'adjacent': 0}
+20 06 {'actions': [], 'adjacent': 0}
+20 10 {'actions': ['SkateF'], 'adjacent': 1}
+20 11 {'actions': ['SkateF'], 'adjacent': 0}
+20 12 {'actions': [], 'adjacent': 0}
+20 13 {'actions': [], 'adjacent': 0}
+20 14 {'actions': [], 'adjacent': 0}
+20 15 {'actions': [], 'adjacent': 0}
+20 16 {'actions': [], 'adjacent': 0}
+20 17 {'actions': [], 'adjacent': 0}
+20 21 {'actions': ['SkateF'], 'adjacent': 1}
+20 22 {'actions': ['SkateF'], 'adjacent': 0}
+20 23 {'actions': [], 'adjacent': 0}
+20 24 {'actions': [], 'adjacent': 0}
+20 25 {'actions': [], 'adjacent': 0}
+20 26 {'actions': [], 'adjacent': 0}
+20 27 {'actions': [], 'adjacent': 0}
+20 30 {'actions': ['SkateF'], 'adjacent': 1}
+20 31 {'actions': ['SkateF'], 'adjacent': 0}
+20 32 {'actions': [], 'adjacent': 0}
+20 33 {'actions': [], 'adjacent': 0}
+20 34 {'actions': [], 'adjacent': 0}
+20 35 {'actions': [], 'adjacent': 0}
+20 36 {'actions': [], 'adjacent': 0}
+20 37 {'actions': [], 'adjacent': 0}
+20 41 {'actions': [], 'adjacent': 0}
+20 42 {'actions': [], 'adjacent': 0}
+20 43 {'actions': [], 'adjacent': 0}
+20 44 {'actions': [], 'adjacent': 0}
+20 45 {'actions': [], 'adjacent': 0}
+20 46 {'actions': [], 'adjacent': 0}
+21 01 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+21 02 {'actions': ['PassF'], 'adjacent': 0}
+21 03 {'actions': ['PassF'], 'adjacent': 0}
+21 04 {'actions': [], 'adjacent': 0}
+21 05 {'actions': ['PassS'], 'adjacent': 0}
+21 06 {'actions': [], 'adjacent': 0}
+21 10 {'actions': ['SkateB'], 'adjacent': 0}
+21 11 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+21 12 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+21 13 {'actions': ['PassF'], 'adjacent': 0}
+21 14 {'actions': [], 'adjacent': 0}
+21 15 {'actions': ['PassS'], 'adjacent': 0}
+21 16 {'actions': [], 'adjacent': 0}
+21 17 {'actions': [], 'adjacent': 0}
+21 20 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+21 22 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+21 23 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+21 24 {'actions': [], 'adjacent': 0}
+21 25 {'actions': ['PassS'], 'adjacent': 0}
+21 26 {'actions': [], 'adjacent': 0}
+21 27 {'actions': [], 'adjacent': 0}
+21 30 {'actions': ['SkateB'], 'adjacent': 0}
+21 31 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+21 32 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+21 33 {'actions': ['PassF'], 'adjacent': 0}
+21 34 {'actions': [], 'adjacent': 0}
+21 35 {'actions': ['PassS'], 'adjacent': 0}
+21 36 {'actions': [], 'adjacent': 0}
+21 37 {'actions': [], 'adjacent': 0}
+21 41 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+21 42 {'actions': ['PassF'], 'adjacent': 0}
+21 43 {'actions': ['PassF'], 'adjacent': 0}
+21 44 {'actions': [], 'adjacent': 0}
+21 45 {'actions': ['PassS'], 'adjacent': 0}
+21 46 {'actions': [], 'adjacent': 0}
+22 01 {'actions': [], 'adjacent': 0}
+22 02 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+22 03 {'actions': ['PassF'], 'adjacent': 0}
+22 04 {'actions': ['PassF'], 'adjacent': 0}
+22 05 {'actions': ['PassS'], 'adjacent': 0}
+22 06 {'actions': [], 'adjacent': 0}
+22 10 {'actions': [], 'adjacent': 0}
+22 11 {'actions': ['SkateB'], 'adjacent': 0}
+22 12 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+22 13 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+22 14 {'actions': ['PassF'], 'adjacent': 0}
+22 15 {'actions': ['PassS'], 'adjacent': 0}
+22 16 {'actions': [], 'adjacent': 0}
+22 17 {'actions': [], 'adjacent': 0}
+22 20 {'actions': [], 'adjacent': 0}
+22 21 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+22 23 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+22 24 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+22 25 {'actions': ['PassS'], 'adjacent': 0}
+22 26 {'actions': [], 'adjacent': 0}
+22 27 {'actions': [], 'adjacent': 0}
+22 30 {'actions': [], 'adjacent': 0}
+22 31 {'actions': ['SkateB'], 'adjacent': 0}
+22 32 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+22 33 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+22 34 {'actions': ['PassF'], 'adjacent': 0}
+22 35 {'actions': ['PassS'], 'adjacent': 0}
+22 36 {'actions': [], 'adjacent': 0}
+22 37 {'actions': [], 'adjacent': 0}
+22 41 {'actions': [], 'adjacent': 0}
+22 42 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+22 43 {'actions': ['PassF'], 'adjacent': 0}
+22 44 {'actions': ['PassF'], 'adjacent': 0}
+22 45 {'actions': ['PassS'], 'adjacent': 0}
+22 46 {'actions': [], 'adjacent': 0}
+23 01 {'actions': [], 'adjacent': 0}
+23 02 {'actions': [], 'adjacent': 0}
+23 03 {'actions': ['PassF'], 'adjacent': 0}
+23 04 {'actions': ['PassF'], 'adjacent': 0}
+23 05 {'actions': ['PassF'], 'adjacent': 0}
+23 06 {'actions': [], 'adjacent': 0}
+23 10 {'actions': [], 'adjacent': 0}
+23 11 {'actions': [], 'adjacent': 0}
+23 12 {'actions': ['SkateB'], 'adjacent': 0}
+23 13 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+23 14 {'actions': ['PassF'], 'adjacent': 0}
+23 15 {'actions': ['PassF'], 'adjacent': 0}
+23 16 {'actions': [], 'adjacent': 0}
+23 17 {'actions': [], 'adjacent': 0}
+23 20 {'actions': [], 'adjacent': 0}
+23 21 {'actions': [], 'adjacent': 0}
+23 22 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+23 24 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+23 25 {'actions': ['PassF'], 'adjacent': 0}
+23 26 {'actions': [], 'adjacent': 0}
+23 27 {'actions': [], 'adjacent': 0}
+23 30 {'actions': [], 'adjacent': 0}
+23 31 {'actions': [], 'adjacent': 0}
+23 32 {'actions': ['SkateB'], 'adjacent': 0}
+23 33 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+23 34 {'actions': ['PassF'], 'adjacent': 0}
+23 35 {'actions': ['PassF'], 'adjacent': 0}
+23 36 {'actions': [], 'adjacent': 0}
+23 37 {'actions': [], 'adjacent': 0}
+23 41 {'actions': [], 'adjacent': 0}
+23 42 {'actions': [], 'adjacent': 0}
+23 43 {'actions': ['PassF'], 'adjacent': 0}
+23 44 {'actions': ['PassF'], 'adjacent': 0}
+23 45 {'actions': ['PassF'], 'adjacent': 0}
+23 46 {'actions': [], 'adjacent': 0}
+24 01 {'actions': [], 'adjacent': 0}
+24 02 {'actions': [], 'adjacent': 0}
+24 03 {'actions': [], 'adjacent': 0}
+24 04 {'actions': ['PassF'], 'adjacent': 0}
+24 05 {'actions': ['PassF'], 'adjacent': 0}
+24 06 {'actions': [], 'adjacent': 0}
+24 10 {'actions': [], 'adjacent': 0}
+24 11 {'actions': [], 'adjacent': 0}
+24 12 {'actions': [], 'adjacent': 0}
+24 13 {'actions': ['SkateB'], 'adjacent': 0}
+24 14 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+24 15 {'actions': ['PassF'], 'adjacent': 0}
+24 16 {'actions': [], 'adjacent': 0}
+24 17 {'actions': [], 'adjacent': 0}
+24 20 {'actions': [], 'adjacent': 0}
+24 21 {'actions': [], 'adjacent': 0}
+24 22 {'actions': [], 'adjacent': 0}
+24 23 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+24 25 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+24 26 {'actions': [], 'adjacent': 0}
+24 27 {'actions': [], 'adjacent': 0}
+24 30 {'actions': [], 'adjacent': 0}
+24 31 {'actions': [], 'adjacent': 0}
+24 32 {'actions': [], 'adjacent': 0}
+24 33 {'actions': ['SkateB'], 'adjacent': 0}
+24 34 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+24 35 {'actions': ['PassF'], 'adjacent': 0}
+24 36 {'actions': [], 'adjacent': 0}
+24 37 {'actions': [], 'adjacent': 0}
+24 41 {'actions': [], 'adjacent': 0}
+24 42 {'actions': [], 'adjacent': 0}
+24 43 {'actions': [], 'adjacent': 0}
+24 44 {'actions': ['PassF'], 'adjacent': 0}
+24 45 {'actions': ['PassF'], 'adjacent': 0}
+24 46 {'actions': [], 'adjacent': 0}
+25 01 {'actions': [], 'adjacent': 0}
+25 02 {'actions': [], 'adjacent': 0}
+25 03 {'actions': [], 'adjacent': 0}
+25 04 {'actions': [], 'adjacent': 0}
+25 05 {'actions': ['PassF'], 'adjacent': 0}
+25 06 {'actions': ['PassF'], 'adjacent': 0}
+25 10 {'actions': [], 'adjacent': 0}
+25 11 {'actions': [], 'adjacent': 0}
+25 12 {'actions': [], 'adjacent': 0}
+25 13 {'actions': [], 'adjacent': 0}
+25 14 {'actions': [], 'adjacent': 0}
+25 15 {'actions': ['PassF'], 'adjacent': 1}
+25 16 {'actions': ['PassF'], 'adjacent': 0}
+25 17 {'actions': ['PassF'], 'adjacent': 0}
+25 20 {'actions': [], 'adjacent': 0}
+25 21 {'actions': [], 'adjacent': 0}
+25 22 {'actions': [], 'adjacent': 0}
+25 23 {'actions': [], 'adjacent': 0}
+25 24 {'actions': [], 'adjacent': 1}
+25 26 {'actions': ['SkateT', 'PassF'], 'adjacent': 1}
+25 27 {'actions': ['PassF'], 'adjacent': 0}
+25 30 {'actions': [], 'adjacent': 0}
+25 31 {'actions': [], 'adjacent': 0}
+25 32 {'actions': [], 'adjacent': 0}
+25 33 {'actions': [], 'adjacent': 0}
+25 34 {'actions': [], 'adjacent': 0}
+25 35 {'actions': ['PassF'], 'adjacent': 1}
+25 36 {'actions': ['PassF'], 'adjacent': 0}
+25 37 {'actions': ['PassF'], 'adjacent': 0}
+25 41 {'actions': [], 'adjacent': 0}
+25 42 {'actions': [], 'adjacent': 0}
+25 43 {'actions': [], 'adjacent': 0}
+25 44 {'actions': [], 'adjacent': 0}
+25 45 {'actions': ['PassF'], 'adjacent': 0}
+25 46 {'actions': ['PassF'], 'adjacent': 0}
+26 01 {'actions': [], 'adjacent': 0}
+26 02 {'actions': [], 'adjacent': 0}
+26 03 {'actions': [], 'adjacent': 0}
+26 04 {'actions': [], 'adjacent': 0}
+26 05 {'actions': [], 'adjacent': 0}
+26 06 {'actions': ['PassF'], 'adjacent': 0}
+26 10 {'actions': [], 'adjacent': 0}
+26 11 {'actions': [], 'adjacent': 0}
+26 12 {'actions': [], 'adjacent': 0}
+26 13 {'actions': [], 'adjacent': 0}
+26 14 {'actions': [], 'adjacent': 0}
+26 15 {'actions': ['SkateB'], 'adjacent': 0}
+26 16 {'actions': ['PassF'], 'adjacent': 1}
+26 17 {'actions': ['PassF'], 'adjacent': 0}
+26 20 {'actions': [], 'adjacent': 0}
+26 21 {'actions': [], 'adjacent': 0}
+26 22 {'actions': [], 'adjacent': 0}
+26 23 {'actions': [], 'adjacent': 0}
+26 24 {'actions': [], 'adjacent': 0}
+26 25 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+26 27 {'actions': ['PassF'], 'adjacent': 1}
+26 30 {'actions': [], 'adjacent': 0}
+26 31 {'actions': [], 'adjacent': 0}
+26 32 {'actions': [], 'adjacent': 0}
+26 33 {'actions': [], 'adjacent': 0}
+26 34 {'actions': [], 'adjacent': 0}
+26 35 {'actions': ['SkateB'], 'adjacent': 0}
+26 36 {'actions': ['PassF'], 'adjacent': 1}
+26 37 {'actions': ['PassF'], 'adjacent': 0}
+26 41 {'actions': [], 'adjacent': 0}
+26 42 {'actions': [], 'adjacent': 0}
+26 43 {'actions': [], 'adjacent': 0}
+26 44 {'actions': [], 'adjacent': 0}
+26 45 {'actions': [], 'adjacent': 0}
+26 46 {'actions': ['PassF'], 'adjacent': 0}
+27 01 {'actions': [], 'adjacent': 0}
+27 02 {'actions': [], 'adjacent': 0}
+27 03 {'actions': [], 'adjacent': 0}
+27 04 {'actions': [], 'adjacent': 0}
+27 05 {'actions': ['PassF'], 'adjacent': 0}
+27 06 {'actions': ['PassF'], 'adjacent': 0}
+27 10 {'actions': [], 'adjacent': 0}
+27 11 {'actions': [], 'adjacent': 0}
+27 12 {'actions': [], 'adjacent': 0}
+27 13 {'actions': [], 'adjacent': 0}
+27 14 {'actions': [], 'adjacent': 0}
+27 15 {'actions': ['PassF'], 'adjacent': 0}
+27 16 {'actions': ['PassF'], 'adjacent': 0}
+27 17 {'actions': [], 'adjacent': 1}
+27 20 {'actions': [], 'adjacent': 0}
+27 21 {'actions': [], 'adjacent': 0}
+27 22 {'actions': [], 'adjacent': 0}
+27 23 {'actions': [], 'adjacent': 0}
+27 24 {'actions': [], 'adjacent': 0}
+27 25 {'actions': ['PassF'], 'adjacent': 0}
+27 26 {'actions': ['SkateT', 'PassF'], 'adjacent': 1}
+27 30 {'actions': [], 'adjacent': 0}
+27 31 {'actions': [], 'adjacent': 0}
+27 32 {'actions': [], 'adjacent': 0}
+27 33 {'actions': [], 'adjacent': 0}
+27 34 {'actions': [], 'adjacent': 0}
+27 35 {'actions': ['PassF'], 'adjacent': 0}
+27 36 {'actions': ['PassF'], 'adjacent': 0}
+27 37 {'actions': [], 'adjacent': 1}
+27 41 {'actions': [], 'adjacent': 0}
+27 42 {'actions': [], 'adjacent': 0}
+27 43 {'actions': [], 'adjacent': 0}
+27 44 {'actions': [], 'adjacent': 0}
+27 45 {'actions': ['PassF'], 'adjacent': 0}
+27 46 {'actions': ['PassF'], 'adjacent': 0}
+30 01 {'actions': [], 'adjacent': 0}
+30 02 {'actions': [], 'adjacent': 0}
+30 03 {'actions': [], 'adjacent': 0}
+30 04 {'actions': [], 'adjacent': 0}
+30 05 {'actions': [], 'adjacent': 0}
+30 06 {'actions': [], 'adjacent': 0}
+30 10 {'actions': ['SkateF'], 'adjacent': 0}
+30 11 {'actions': [], 'adjacent': 0}
+30 12 {'actions': [], 'adjacent': 0}
+30 13 {'actions': [], 'adjacent': 0}
+30 14 {'actions': [], 'adjacent': 0}
+30 15 {'actions': [], 'adjacent': 0}
+30 16 {'actions': [], 'adjacent': 0}
+30 17 {'actions': [], 'adjacent': 0}
+30 20 {'actions': ['SkateF'], 'adjacent': 1}
+30 21 {'actions': ['SkateF'], 'adjacent': 0}
+30 22 {'actions': [], 'adjacent': 0}
+30 23 {'actions': [], 'adjacent': 0}
+30 24 {'actions': [], 'adjacent': 0}
+30 25 {'actions': [], 'adjacent': 0}
+30 26 {'actions': [], 'adjacent': 0}
+30 27 {'actions': [], 'adjacent': 0}
+30 31 {'actions': ['SkateF'], 'adjacent': 1}
+30 32 {'actions': ['SkateF'], 'adjacent': 0}
+30 33 {'actions': [], 'adjacent': 0}
+30 34 {'actions': [], 'adjacent': 0}
+30 35 {'actions': [], 'adjacent': 0}
+30 36 {'actions': [], 'adjacent': 0}
+30 37 {'actions': [], 'adjacent': 0}
+30 41 {'actions': ['SkateF'], 'adjacent': 1}
+30 42 {'actions': [], 'adjacent': 0}
+30 43 {'actions': [], 'adjacent': 0}
+30 44 {'actions': [], 'adjacent': 0}
+30 45 {'actions': [], 'adjacent': 0}
+30 46 {'actions': [], 'adjacent': 0}
+31 01 {'actions': ['PassF'], 'adjacent': 0}
+31 02 {'actions': ['PassF'], 'adjacent': 0}
+31 03 {'actions': ['PassF'], 'adjacent': 0}
+31 04 {'actions': [], 'adjacent': 0}
+31 05 {'actions': ['PassS'], 'adjacent': 0}
+31 06 {'actions': [], 'adjacent': 0}
+31 10 {'actions': [], 'adjacent': 0}
+31 11 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+31 12 {'actions': ['PassF'], 'adjacent': 0}
+31 13 {'actions': ['PassF'], 'adjacent': 0}
+31 14 {'actions': [], 'adjacent': 0}
+31 15 {'actions': ['PassS'], 'adjacent': 0}
+31 16 {'actions': [], 'adjacent': 0}
+31 17 {'actions': [], 'adjacent': 0}
+31 20 {'actions': ['SkateB'], 'adjacent': 0}
+31 21 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+31 22 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+31 23 {'actions': ['PassF'], 'adjacent': 0}
+31 24 {'actions': [], 'adjacent': 0}
+31 25 {'actions': ['PassS'], 'adjacent': 0}
+31 26 {'actions': [], 'adjacent': 0}
+31 27 {'actions': [], 'adjacent': 0}
+31 30 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+31 32 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+31 33 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+31 34 {'actions': [], 'adjacent': 0}
+31 35 {'actions': ['PassS'], 'adjacent': 0}
+31 36 {'actions': [], 'adjacent': 0}
+31 37 {'actions': [], 'adjacent': 0}
+31 41 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+31 42 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+31 43 {'actions': ['PassF'], 'adjacent': 0}
+31 44 {'actions': [], 'adjacent': 0}
+31 45 {'actions': ['PassS'], 'adjacent': 0}
+31 46 {'actions': [], 'adjacent': 0}
+32 01 {'actions': [], 'adjacent': 0}
+32 02 {'actions': ['PassF'], 'adjacent': 0}
+32 03 {'actions': ['PassF'], 'adjacent': 0}
+32 04 {'actions': ['PassF'], 'adjacent': 0}
+32 05 {'actions': ['PassS'], 'adjacent': 0}
+32 06 {'actions': [], 'adjacent': 0}
+32 10 {'actions': [], 'adjacent': 0}
+32 11 {'actions': [], 'adjacent': 0}
+32 12 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+32 13 {'actions': ['PassF'], 'adjacent': 0}
+32 14 {'actions': ['PassF'], 'adjacent': 0}
+32 15 {'actions': ['PassS'], 'adjacent': 0}
+32 16 {'actions': [], 'adjacent': 0}
+32 17 {'actions': [], 'adjacent': 0}
+32 20 {'actions': [], 'adjacent': 0}
+32 21 {'actions': ['SkateB'], 'adjacent': 0}
+32 22 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+32 23 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+32 24 {'actions': ['PassF'], 'adjacent': 0}
+32 25 {'actions': ['PassS'], 'adjacent': 0}
+32 26 {'actions': [], 'adjacent': 0}
+32 27 {'actions': [], 'adjacent': 0}
+32 30 {'actions': [], 'adjacent': 0}
+32 31 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+32 33 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+32 34 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+32 35 {'actions': ['PassS'], 'adjacent': 0}
+32 36 {'actions': [], 'adjacent': 0}
+32 37 {'actions': [], 'adjacent': 0}
+32 41 {'actions': ['SkateB'], 'adjacent': 0}
+32 42 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+32 43 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+32 44 {'actions': ['PassF'], 'adjacent': 0}
+32 45 {'actions': ['PassS'], 'adjacent': 0}
+32 46 {'actions': [], 'adjacent': 0}
+33 01 {'actions': [], 'adjacent': 0}
+33 02 {'actions': [], 'adjacent': 0}
+33 03 {'actions': ['PassF'], 'adjacent': 0}
+33 04 {'actions': ['PassF'], 'adjacent': 0}
+33 05 {'actions': ['PassF'], 'adjacent': 0}
+33 06 {'actions': [], 'adjacent': 0}
+33 10 {'actions': [], 'adjacent': 0}
+33 11 {'actions': [], 'adjacent': 0}
+33 12 {'actions': [], 'adjacent': 0}
+33 13 {'actions': ['PassF'], 'adjacent': 0}
+33 14 {'actions': ['PassF'], 'adjacent': 0}
+33 15 {'actions': ['PassF'], 'adjacent': 0}
+33 16 {'actions': [], 'adjacent': 0}
+33 17 {'actions': [], 'adjacent': 0}
+33 20 {'actions': [], 'adjacent': 0}
+33 21 {'actions': [], 'adjacent': 0}
+33 22 {'actions': ['SkateB'], 'adjacent': 0}
+33 23 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+33 24 {'actions': ['PassF'], 'adjacent': 0}
+33 25 {'actions': ['PassF'], 'adjacent': 0}
+33 26 {'actions': [], 'adjacent': 0}
+33 27 {'actions': [], 'adjacent': 0}
+33 30 {'actions': [], 'adjacent': 0}
+33 31 {'actions': [], 'adjacent': 0}
+33 32 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+33 34 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+33 35 {'actions': ['PassF'], 'adjacent': 0}
+33 36 {'actions': [], 'adjacent': 0}
+33 37 {'actions': [], 'adjacent': 0}
+33 41 {'actions': [], 'adjacent': 0}
+33 42 {'actions': ['SkateB'], 'adjacent': 0}
+33 43 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+33 44 {'actions': ['PassF'], 'adjacent': 0}
+33 45 {'actions': ['PassF'], 'adjacent': 0}
+33 46 {'actions': [], 'adjacent': 0}
+34 01 {'actions': [], 'adjacent': 0}
+34 02 {'actions': [], 'adjacent': 0}
+34 03 {'actions': [], 'adjacent': 0}
+34 04 {'actions': ['PassF'], 'adjacent': 0}
+34 05 {'actions': ['PassF'], 'adjacent': 0}
+34 06 {'actions': [], 'adjacent': 0}
+34 10 {'actions': [], 'adjacent': 0}
+34 11 {'actions': [], 'adjacent': 0}
+34 12 {'actions': [], 'adjacent': 0}
+34 13 {'actions': [], 'adjacent': 0}
+34 14 {'actions': ['PassF'], 'adjacent': 0}
+34 15 {'actions': ['PassF'], 'adjacent': 0}
+34 16 {'actions': [], 'adjacent': 0}
+34 17 {'actions': [], 'adjacent': 0}
+34 20 {'actions': [], 'adjacent': 0}
+34 21 {'actions': [], 'adjacent': 0}
+34 22 {'actions': [], 'adjacent': 0}
+34 23 {'actions': ['SkateB'], 'adjacent': 0}
+34 24 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+34 25 {'actions': ['PassF'], 'adjacent': 0}
+34 26 {'actions': [], 'adjacent': 0}
+34 27 {'actions': [], 'adjacent': 0}
+34 30 {'actions': [], 'adjacent': 0}
+34 31 {'actions': [], 'adjacent': 0}
+34 32 {'actions': [], 'adjacent': 0}
+34 33 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+34 35 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+34 36 {'actions': [], 'adjacent': 0}
+34 37 {'actions': [], 'adjacent': 0}
+34 41 {'actions': [], 'adjacent': 0}
+34 42 {'actions': [], 'adjacent': 0}
+34 43 {'actions': ['SkateB'], 'adjacent': 0}
+34 44 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+34 45 {'actions': ['PassF'], 'adjacent': 0}
+34 46 {'actions': [], 'adjacent': 0}
+35 01 {'actions': [], 'adjacent': 0}
+35 02 {'actions': [], 'adjacent': 0}
+35 03 {'actions': [], 'adjacent': 0}
+35 04 {'actions': [], 'adjacent': 0}
+35 05 {'actions': ['PassF'], 'adjacent': 0}
+35 06 {'actions': ['PassF'], 'adjacent': 0}
+35 10 {'actions': [], 'adjacent': 0}
+35 11 {'actions': [], 'adjacent': 0}
+35 12 {'actions': [], 'adjacent': 0}
+35 13 {'actions': [], 'adjacent': 0}
+35 14 {'actions': [], 'adjacent': 0}
+35 15 {'actions': ['PassF'], 'adjacent': 0}
+35 16 {'actions': ['PassF'], 'adjacent': 0}
+35 17 {'actions': ['PassF'], 'adjacent': 0}
+35 20 {'actions': [], 'adjacent': 0}
+35 21 {'actions': [], 'adjacent': 0}
+35 22 {'actions': [], 'adjacent': 0}
+35 23 {'actions': [], 'adjacent': 0}
+35 24 {'actions': [], 'adjacent': 0}
+35 25 {'actions': ['PassF'], 'adjacent': 1}
+35 26 {'actions': ['SkateT', 'PassF'], 'adjacent': 0}
+35 27 {'actions': ['SkateA', 'PassF'], 'adjacent': 0}
+35 30 {'actions': [], 'adjacent': 0}
+35 31 {'actions': [], 'adjacent': 0}
+35 32 {'actions': [], 'adjacent': 0}
+35 33 {'actions': [], 'adjacent': 0}
+35 34 {'actions': [], 'adjacent': 1}
+35 36 {'actions': ['PassF'], 'adjacent': 1}
+35 37 {'actions': ['PassF'], 'adjacent': 0}
+35 41 {'actions': [], 'adjacent': 0}
+35 42 {'actions': [], 'adjacent': 0}
+35 43 {'actions': [], 'adjacent': 0}
+35 44 {'actions': [], 'adjacent': 0}
+35 45 {'actions': ['PassF'], 'adjacent': 1}
+35 46 {'actions': ['PassF'], 'adjacent': 0}
+36 01 {'actions': [], 'adjacent': 0}
+36 02 {'actions': [], 'adjacent': 0}
+36 03 {'actions': [], 'adjacent': 0}
+36 04 {'actions': [], 'adjacent': 0}
+36 05 {'actions': [], 'adjacent': 0}
+36 06 {'actions': ['PassF'], 'adjacent': 0}
+36 10 {'actions': [], 'adjacent': 0}
+36 11 {'actions': [], 'adjacent': 0}
+36 12 {'actions': [], 'adjacent': 0}
+36 13 {'actions': [], 'adjacent': 0}
+36 14 {'actions': [], 'adjacent': 0}
+36 15 {'actions': [], 'adjacent': 0}
+36 16 {'actions': ['PassF'], 'adjacent': 0}
+36 17 {'actions': ['PassF'], 'adjacent': 0}
+36 20 {'actions': [], 'adjacent': 0}
+36 21 {'actions': [], 'adjacent': 0}
+36 22 {'actions': [], 'adjacent': 0}
+36 23 {'actions': [], 'adjacent': 0}
+36 24 {'actions': [], 'adjacent': 0}
+36 25 {'actions': ['SkateB'], 'adjacent': 0}
+36 26 {'actions': ['SkateT', 'PassF'], 'adjacent': 1}
+36 27 {'actions': ['SkateA', 'PassF'], 'adjacent': 0}
+36 30 {'actions': [], 'adjacent': 0}
+36 31 {'actions': [], 'adjacent': 0}
+36 32 {'actions': [], 'adjacent': 0}
+36 33 {'actions': [], 'adjacent': 0}
+36 34 {'actions': [], 'adjacent': 0}
+36 35 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+36 37 {'actions': ['PassF'], 'adjacent': 1}
+36 41 {'actions': [], 'adjacent': 0}
+36 42 {'actions': [], 'adjacent': 0}
+36 43 {'actions': [], 'adjacent': 0}
+36 44 {'actions': [], 'adjacent': 0}
+36 45 {'actions': ['SkateB'], 'adjacent': 0}
+36 46 {'actions': ['PassF'], 'adjacent': 1}
+37 01 {'actions': [], 'adjacent': 0}
+37 02 {'actions': [], 'adjacent': 0}
+37 03 {'actions': [], 'adjacent': 0}
+37 04 {'actions': [], 'adjacent': 0}
+37 05 {'actions': ['PassF'], 'adjacent': 0}
+37 06 {'actions': ['PassF'], 'adjacent': 0}
+37 10 {'actions': [], 'adjacent': 0}
+37 11 {'actions': [], 'adjacent': 0}
+37 12 {'actions': [], 'adjacent': 0}
+37 13 {'actions': [], 'adjacent': 0}
+37 14 {'actions': [], 'adjacent': 0}
+37 15 {'actions': ['PassF'], 'adjacent': 0}
+37 16 {'actions': ['PassF'], 'adjacent': 0}
+37 17 {'actions': [], 'adjacent': 0}
+37 20 {'actions': [], 'adjacent': 0}
+37 21 {'actions': [], 'adjacent': 0}
+37 22 {'actions': [], 'adjacent': 0}
+37 23 {'actions': [], 'adjacent': 0}
+37 24 {'actions': [], 'adjacent': 0}
+37 25 {'actions': ['PassF'], 'adjacent': 0}
+37 26 {'actions': ['SkateT', 'PassF'], 'adjacent': 0}
+37 27 {'actions': [], 'adjacent': 1}
+37 30 {'actions': [], 'adjacent': 0}
+37 31 {'actions': [], 'adjacent': 0}
+37 32 {'actions': [], 'adjacent': 0}
+37 33 {'actions': [], 'adjacent': 0}
+37 34 {'actions': [], 'adjacent': 0}
+37 35 {'actions': ['PassF'], 'adjacent': 0}
+37 36 {'actions': ['PassF'], 'adjacent': 1}
+37 41 {'actions': [], 'adjacent': 0}
+37 42 {'actions': [], 'adjacent': 0}
+37 43 {'actions': [], 'adjacent': 0}
+37 44 {'actions': [], 'adjacent': 0}
+37 45 {'actions': ['PassF'], 'adjacent': 0}
+37 46 {'actions': ['PassF'], 'adjacent': 1}
+41 01 {'actions': ['PassF'], 'adjacent': 0}
+41 02 {'actions': ['PassF'], 'adjacent': 0}
+41 03 {'actions': ['PassF'], 'adjacent': 0}
+41 04 {'actions': [], 'adjacent': 0}
+41 05 {'actions': ['PassS'], 'adjacent': 0}
+41 06 {'actions': [], 'adjacent': 0}
+41 10 {'actions': [], 'adjacent': 0}
+41 11 {'actions': ['PassF'], 'adjacent': 0}
+41 12 {'actions': ['PassF'], 'adjacent': 0}
+41 13 {'actions': ['PassF'], 'adjacent': 0}
+41 14 {'actions': [], 'adjacent': 0}
+41 15 {'actions': ['PassS'], 'adjacent': 0}
+41 16 {'actions': [], 'adjacent': 0}
+41 17 {'actions': [], 'adjacent': 0}
+41 20 {'actions': [], 'adjacent': 0}
+41 21 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+41 22 {'actions': ['PassF'], 'adjacent': 0}
+41 23 {'actions': ['PassF'], 'adjacent': 0}
+41 24 {'actions': [], 'adjacent': 0}
+41 25 {'actions': ['PassS'], 'adjacent': 0}
+41 26 {'actions': [], 'adjacent': 0}
+41 27 {'actions': [], 'adjacent': 0}
+41 30 {'actions': ['SkateB'], 'adjacent': 1}
+41 31 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+41 32 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+41 33 {'actions': ['PassF'], 'adjacent': 0}
+41 34 {'actions': [], 'adjacent': 0}
+41 35 {'actions': ['PassS'], 'adjacent': 0}
+41 36 {'actions': [], 'adjacent': 0}
+41 37 {'actions': [], 'adjacent': 0}
+41 42 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+41 43 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+41 44 {'actions': [], 'adjacent': 0}
+41 45 {'actions': ['PassS'], 'adjacent': 0}
+41 46 {'actions': [], 'adjacent': 0}
+42 01 {'actions': [], 'adjacent': 0}
+42 02 {'actions': ['PassF'], 'adjacent': 0}
+42 03 {'actions': ['PassF'], 'adjacent': 0}
+42 04 {'actions': ['PassF'], 'adjacent': 0}
+42 05 {'actions': ['PassS'], 'adjacent': 0}
+42 06 {'actions': [], 'adjacent': 0}
+42 10 {'actions': [], 'adjacent': 0}
+42 11 {'actions': [], 'adjacent': 0}
+42 12 {'actions': ['PassF'], 'adjacent': 0}
+42 13 {'actions': ['PassF'], 'adjacent': 0}
+42 14 {'actions': ['PassF'], 'adjacent': 0}
+42 15 {'actions': ['PassS'], 'adjacent': 0}
+42 16 {'actions': [], 'adjacent': 0}
+42 17 {'actions': [], 'adjacent': 0}
+42 20 {'actions': [], 'adjacent': 0}
+42 21 {'actions': [], 'adjacent': 0}
+42 22 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+42 23 {'actions': ['PassF'], 'adjacent': 0}
+42 24 {'actions': ['PassF'], 'adjacent': 0}
+42 25 {'actions': ['PassS'], 'adjacent': 0}
+42 26 {'actions': [], 'adjacent': 0}
+42 27 {'actions': [], 'adjacent': 0}
+42 30 {'actions': [], 'adjacent': 0}
+42 31 {'actions': ['SkateB'], 'adjacent': 0}
+42 32 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+42 33 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+42 34 {'actions': ['PassF'], 'adjacent': 0}
+42 35 {'actions': ['PassS'], 'adjacent': 0}
+42 36 {'actions': [], 'adjacent': 0}
+42 37 {'actions': [], 'adjacent': 0}
+42 41 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+42 43 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+42 44 {'actions': ['SkateF', 'PassF'], 'adjacent': 0}
+42 45 {'actions': ['PassS'], 'adjacent': 0}
+42 46 {'actions': [], 'adjacent': 0}
+43 01 {'actions': [], 'adjacent': 0}
+43 02 {'actions': [], 'adjacent': 0}
+43 03 {'actions': ['PassF'], 'adjacent': 0}
+43 04 {'actions': ['PassF'], 'adjacent': 0}
+43 05 {'actions': ['PassF'], 'adjacent': 0}
+43 06 {'actions': [], 'adjacent': 0}
+43 10 {'actions': [], 'adjacent': 0}
+43 11 {'actions': [], 'adjacent': 0}
+43 12 {'actions': [], 'adjacent': 0}
+43 13 {'actions': ['PassF'], 'adjacent': 0}
+43 14 {'actions': ['PassF'], 'adjacent': 0}
+43 15 {'actions': ['PassF'], 'adjacent': 0}
+43 16 {'actions': [], 'adjacent': 0}
+43 17 {'actions': [], 'adjacent': 0}
+43 20 {'actions': [], 'adjacent': 0}
+43 21 {'actions': [], 'adjacent': 0}
+43 22 {'actions': [], 'adjacent': 0}
+43 23 {'actions': ['PassF'], 'adjacent': 0}
+43 24 {'actions': ['PassF'], 'adjacent': 0}
+43 25 {'actions': ['PassF'], 'adjacent': 0}
+43 26 {'actions': [], 'adjacent': 0}
+43 27 {'actions': [], 'adjacent': 0}
+43 30 {'actions': [], 'adjacent': 0}
+43 31 {'actions': [], 'adjacent': 0}
+43 32 {'actions': ['SkateB'], 'adjacent': 0}
+43 33 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+43 34 {'actions': ['PassF'], 'adjacent': 0}
+43 35 {'actions': ['PassF'], 'adjacent': 0}
+43 36 {'actions': [], 'adjacent': 0}
+43 37 {'actions': [], 'adjacent': 0}
+43 41 {'actions': [], 'adjacent': 0}
+43 42 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+43 44 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+43 45 {'actions': ['PassF'], 'adjacent': 0}
+43 46 {'actions': [], 'adjacent': 0}
+44 01 {'actions': [], 'adjacent': 0}
+44 02 {'actions': [], 'adjacent': 0}
+44 03 {'actions': [], 'adjacent': 0}
+44 04 {'actions': ['PassF'], 'adjacent': 0}
+44 05 {'actions': ['PassF'], 'adjacent': 0}
+44 06 {'actions': [], 'adjacent': 0}
+44 10 {'actions': [], 'adjacent': 0}
+44 11 {'actions': [], 'adjacent': 0}
+44 12 {'actions': [], 'adjacent': 0}
+44 13 {'actions': [], 'adjacent': 0}
+44 14 {'actions': ['PassF'], 'adjacent': 0}
+44 15 {'actions': ['PassF'], 'adjacent': 0}
+44 16 {'actions': [], 'adjacent': 0}
+44 17 {'actions': [], 'adjacent': 0}
+44 20 {'actions': [], 'adjacent': 0}
+44 21 {'actions': [], 'adjacent': 0}
+44 22 {'actions': [], 'adjacent': 0}
+44 23 {'actions': [], 'adjacent': 0}
+44 24 {'actions': ['PassF'], 'adjacent': 0}
+44 25 {'actions': ['PassF'], 'adjacent': 0}
+44 26 {'actions': [], 'adjacent': 0}
+44 27 {'actions': [], 'adjacent': 0}
+44 30 {'actions': [], 'adjacent': 0}
+44 31 {'actions': [], 'adjacent': 0}
+44 32 {'actions': [], 'adjacent': 0}
+44 33 {'actions': ['SkateB'], 'adjacent': 0}
+44 34 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+44 35 {'actions': ['PassF'], 'adjacent': 0}
+44 36 {'actions': [], 'adjacent': 0}
+44 37 {'actions': [], 'adjacent': 0}
+44 41 {'actions': [], 'adjacent': 0}
+44 42 {'actions': [], 'adjacent': 0}
+44 43 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}
+44 45 {'actions': ['SkateF', 'PassF'], 'adjacent': 1}
+44 46 {'actions': [], 'adjacent': 0}
+45 01 {'actions': [], 'adjacent': 0}
+45 02 {'actions': [], 'adjacent': 0}
+45 03 {'actions': [], 'adjacent': 0}
+45 04 {'actions': [], 'adjacent': 0}
+45 05 {'actions': ['PassF'], 'adjacent': 0}
+45 06 {'actions': ['PassF'], 'adjacent': 0}
+45 10 {'actions': [], 'adjacent': 0}
+45 11 {'actions': [], 'adjacent': 0}
+45 12 {'actions': [], 'adjacent': 0}
+45 13 {'actions': [], 'adjacent': 0}
+45 14 {'actions': [], 'adjacent': 0}
+45 15 {'actions': ['PassF'], 'adjacent': 0}
+45 16 {'actions': ['PassF'], 'adjacent': 0}
+45 17 {'actions': ['PassF'], 'adjacent': 0}
+45 20 {'actions': [], 'adjacent': 0}
+45 21 {'actions': [], 'adjacent': 0}
+45 22 {'actions': [], 'adjacent': 0}
+45 23 {'actions': [], 'adjacent': 0}
+45 24 {'actions': [], 'adjacent': 0}
+45 25 {'actions': ['PassF'], 'adjacent': 0}
+45 26 {'actions': ['PassF'], 'adjacent': 0}
+45 27 {'actions': ['SkateA', 'PassF'], 'adjacent': 0}
+45 30 {'actions': [], 'adjacent': 0}
+45 31 {'actions': [], 'adjacent': 0}
+45 32 {'actions': [], 'adjacent': 0}
+45 33 {'actions': [], 'adjacent': 0}
+45 34 {'actions': [], 'adjacent': 0}
+45 35 {'actions': ['PassF'], 'adjacent': 1}
+45 36 {'actions': ['SkateT', 'PassF'], 'adjacent': 0}
+45 37 {'actions': ['PassF'], 'adjacent': 0}
+45 41 {'actions': [], 'adjacent': 0}
+45 42 {'actions': [], 'adjacent': 0}
+45 43 {'actions': [], 'adjacent': 0}
+45 44 {'actions': [], 'adjacent': 1}
+45 46 {'actions': ['PassF'], 'adjacent': 1}
+46 01 {'actions': [], 'adjacent': 0}
+46 02 {'actions': [], 'adjacent': 0}
+46 03 {'actions': [], 'adjacent': 0}
+46 04 {'actions': [], 'adjacent': 0}
+46 05 {'actions': [], 'adjacent': 0}
+46 06 {'actions': ['PassF'], 'adjacent': 0}
+46 10 {'actions': [], 'adjacent': 0}
+46 11 {'actions': [], 'adjacent': 0}
+46 12 {'actions': [], 'adjacent': 0}
+46 13 {'actions': [], 'adjacent': 0}
+46 14 {'actions': [], 'adjacent': 0}
+46 15 {'actions': [], 'adjacent': 0}
+46 16 {'actions': ['PassF'], 'adjacent': 0}
+46 17 {'actions': ['PassF'], 'adjacent': 0}
+46 20 {'actions': [], 'adjacent': 0}
+46 21 {'actions': [], 'adjacent': 0}
+46 22 {'actions': [], 'adjacent': 0}
+46 23 {'actions': [], 'adjacent': 0}
+46 24 {'actions': [], 'adjacent': 0}
+46 25 {'actions': [], 'adjacent': 0}
+46 26 {'actions': ['PassF'], 'adjacent': 0}
+46 27 {'actions': ['SkateA', 'PassF'], 'adjacent': 0}
+46 30 {'actions': [], 'adjacent': 0}
+46 31 {'actions': [], 'adjacent': 0}
+46 32 {'actions': [], 'adjacent': 0}
+46 33 {'actions': [], 'adjacent': 0}
+46 34 {'actions': [], 'adjacent': 0}
+46 35 {'actions': ['SkateB'], 'adjacent': 0}
+46 36 {'actions': ['SkateT', 'PassF'], 'adjacent': 1}
+46 37 {'actions': ['PassF'], 'adjacent': 1}
+46 41 {'actions': [], 'adjacent': 0}
+46 42 {'actions': [], 'adjacent': 0}
+46 43 {'actions': [], 'adjacent': 0}
+46 44 {'actions': [], 'adjacent': 0}
+46 45 {'actions': ['SkateB', 'PassB'], 'adjacent': 1}

@@ -1,4 +1,5 @@
-import skillContests, player, team, game, attributes
+import skillContests, player, team, game, attributes, os
+
 
 class AttributeTest(object):
     def __init__(self):
