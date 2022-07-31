@@ -123,7 +123,8 @@ class Game(object):
             self.positionInPossession = SkaterPosition(random.sample([0, 1, 1, 3, 3, 4],1)[0]) #wingers are less likely to recieve the faceoff than defensemen
             self.playStopped = False
             winningPlayer = self.skatersInPossession()[SkaterPosition.C.value]
-            eventString = f"{self.clockToMinutesSeconds()} - {self.teamInPossession.shortname} {str(winningPlayer)} wins faceoff."
+            receivingPlayer = self.skatersInPossession()[self.positionInPossession.value]
+            eventString = f"{self.clockToMinutesSeconds()} - {self.teamInPossession.shortname} {str(winningPlayer)} wins faceoff to {str(receivingPlayer)}"
             self.eventLog.append(eventString)
             self.eventLogVerbose.append(eventString)
             self.clock -= random.randint(2,5)
@@ -132,7 +133,7 @@ class Game(object):
     def saveMadeStop(self, shootingPlayer, shotType):
         """Stops play due to a save made by a goalie, and sets the faceoff dot to be used."""
         self.playStopped = True
-        eventText = f"{self.clockToMinutesSeconds()} - {str(self.defendingGoalie)} saves shot from {str(shootingPlayer), stops play.}"
+        eventText = f"{self.clockToMinutesSeconds()} - {str(self.defendingGoalie)} saves shot from {str(shootingPlayer)}, stops play."
         self.eventLog.append(eventText)
         self.eventLogVerbose.append(eventText)
         options = [FaceoffDot.AwayZoneLeft, FaceoffDot.AwayZoneRight] if self.homeAttacking() else [FaceoffDot.HomeZoneLeft, FaceoffDot.HomeZoneRight]

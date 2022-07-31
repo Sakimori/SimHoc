@@ -11,7 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>SimHoc</Name>
     <RootNamespace>SimHoc</RootNamespace>
-    <InterpreterId>MSBuild|Hockey|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|hockey10|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,6 +50,15 @@
     <Compile Include="SimHoc.py" />
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include=".env\hockey10\">
+      <Id>hockey10</Id>
+      <Version>3.10</Version>
+      <Description>hockey10 (Python 3.10 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="Hockey\">
       <Id>Hockey</Id>
       <Version>3.8</Version>

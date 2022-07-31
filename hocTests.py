@@ -127,4 +127,4 @@ class TestGame(object):
             self.Game.playStopped = True
             foResult = self.Game.event() #this doesnt return anything but it's nice to know what it's for I guess
         lines = self.Game.eventLogOut()
-        pass
+        print(lines)

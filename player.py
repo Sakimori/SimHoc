@@ -10,7 +10,7 @@ class Player(object):
     def __init__(self, name:str, number:int=0):
         if name is None:
             self.attributes = []
-        elif len(name) > 30:
+        elif len(name) > 20:
             raise CreationError("Player name too long.")
         elif number < 0 or number > 99:
             raise CreationError("Player number not valid.")
@@ -18,6 +18,8 @@ class Player(object):
             self.name = name
             self.attributes = self.loadAttributes()
         self.number = number
+        scoutLevel = 0 #how well scouted opposing team is; not changing
+        confidenceStage = 0 #how well the player can judge enemy skill; builds over game
 
     def loadAttributes(self):
         """Generates attributes based on name, or loads from database if present."""
@@ -62,9 +64,15 @@ class Player(object):
     def initials(self):
         names = self.name.split()
         outString = ""
-        for name in names:
-            outString += f"{name[0]}."
+        if len(names) >= 2:
+            for name in names:
+                outString += f"{name[0]}."
+        else:
+            outString = f"{self.name[:3]}."
         return outString
+
+    def predictOpposingAction(self, opposingSkater):
+        raise NotImplementedError()
 
     def chooseAtkAction(self):
         raise NotImplementedError()
@@ -80,6 +88,7 @@ class Skater(Player):
 class Goalie(Player):
     """A hockey player that *is* a goalie."""
     pass
+
 
 class AtkAction(Enum):
     SkateB = 0
