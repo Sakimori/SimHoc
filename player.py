@@ -27,14 +27,21 @@ class Player(object):
         self.attributesVersion = rawAtrs[0]
         return rawAtrs[1:]
 
-    def twitterString(self): 
-        """Generates a twitter-formatted string representing the player."""
-        send = f"{self.name}:\n"
+    def statsString(self): 
+        """Generates a formatted string representing the player's stats."""
+        send = ""
         for attr in self.attributes:
             if attr.name not in attributes.noPrint:
                 send += attr.twitterFormat()
                 send += "\n"
         return send
+
+    def idString(self):
+        """Generates a formatted string of player name and number."""
+        if self.number < 10:
+            return f"#0{self.number}: {self.name}"
+        else:
+            return f"#{self.number}: {self.name}"
 
     def getAttribute(self, shortname:str):
         """Returns an Attribute object with given shortname."""
