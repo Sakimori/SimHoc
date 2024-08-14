@@ -42,7 +42,7 @@ class Attribute:
         return not self == other
 
     #less than/greater than compare attributes by value, or compare value to int
-    def __lt__(self, value):
+    def __lt__(self, other):
         if isinstance(other, Attribute):
             return self.value < other.value
         elif isinstance(other, int):
@@ -50,7 +50,7 @@ class Attribute:
         else:
             return False
 
-    def __le__(self, value):
+    def __le__(self, other):
         if isinstance(other, Attribute):
             return self.value <= other.value
         elif isinstance(other, int):
