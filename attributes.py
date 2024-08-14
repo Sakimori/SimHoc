@@ -30,11 +30,13 @@ class Attribute:
         return f"{self.name} - {int(self.value)}"
 
     #Comparison helpers
-    def __eq__(self, other): #can compare attributes by name, or find attribute by value
+    def __eq__(self, other): #can compare attributes by value, or find attribute by name
         if isinstance(other, Attribute):
-            return self.name == other.name
+            return self.value == other.value
         elif isinstance(other, int):
             return self.value == other
+        elif isinstance(other, str):
+            return self.name == other
         else:
             return False
 
