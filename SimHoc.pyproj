@@ -85,8 +85,8 @@
     <Folder Include="Rinks\Graphs\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\auth.txt" />
     <Content Include="Data\s options.txt" />
-    <Content Include="Data\Twitter.keys" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
