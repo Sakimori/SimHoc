@@ -1,4 +1,4 @@
-import os, player, tweepy, twitHandler, time, skillContests, random, itertools
+import os, player, time, skillContests, random, itertools
 from attributes import normalDis
 from hocTests import AttributeTest, TestGame
 from hocUtils import RinkGraph
