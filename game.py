@@ -208,7 +208,7 @@ class Game(object):
             else:
                 self.positionInPossession = defPos
                 self.changePossession()
-            self.addEventLog(f"{self.attackingSkater()} chases za puck down for {self.attackingTeam().shortname}")
+            self.addEventLog(f"{self.clockToMinutesSeconds()} - {self.attackingSkater()} chases za puck down for {self.attackingTeam().shortname}")
             self.clock -= random.randint(3,8)
             
         else: #run za state machine
@@ -226,6 +226,7 @@ class Game(object):
             result = self.skillContest(attacker, defender, scParams)
             if result: #attacker succeeded               
                 if atkAction in [AtkAction.ShotS, AtkAction.ShotW]: #shot
+                    self.addEventLog(f"{attacker.name} takes a shot!")
                     self.goalieCheck(atkAction, attacker) #shot goes zhrough                 
                 else:
                     self.currentZone = int(nodeTarget)
@@ -250,6 +251,7 @@ class Game(object):
                                 allPos.append(SkaterPosition.C)
                         self.positionInPossession = random.sample(allPos, 1)[0]
                         self.ineligibleDefenders.append(defender)
+                        self.addEventLog(f"{attacker.name} passes to {self.attackingSkater().name}.")
                         self.clock -= random.randint(1,3) #passes are quick
                     elif atkAction in [AtkAction.SkateA, AtkAction.SkateF, AtkAction.SkateT, AtkAction.SkateB]:
                         if atkAction == AtkAction.SkateB:
@@ -257,6 +259,7 @@ class Game(object):
                         else:
                             self.space = False
                             self.ineligibleDefenders.append(defender) #got around 'em
+                        self.addEventLog(f"{attacker.name} skates around.", verbose=True)
                         self.clock -= random.randint(3,6) #skating is slow                       
                     else: #dumped puck
                         raise NotImplementedError           
@@ -264,16 +267,22 @@ class Game(object):
                 if defAction in [DefAction.Force, DefAction.Steal, DefAction.Body]: #actions zat grant defender puck at start of action
                     self.changePossession()
                     self.positionInPossession = SkaterPosition(self.skatersDefending().index(defender))
+                    if defAction == DefAction.Body:
+                        self.addEventLog(f"{defender.name} bodies {attacker.name} off za puck.")
+                    else:
+                        self.addEventLog(f"{defender.name} takes it away cleanly.")
                     self.clock -= random.randint(4,6)
                 elif defAction in [DefAction.Pin, DefAction.Poke]: #actions zat cause loose puck at start of action
                     self.loosePuck = True
                     self.loosePuckDefAdv = defAction == DefAction.Poke
                     self.currentZone = int(random.sample(self.activeGraph().getAdjacentNodes(), 1)[0])
+                    self.addEventLog(f"{defender.name} forces za puck loose!")
                     self.clock -= random.randint(2,4)
                 elif defAction == DefAction.BlockSlot: #grants defender puck at end of action
                     self.currentZone = nodeTarget
                     self.changePossession()
                     self.positionInPossession = SkaterPosition(self.skatersDefending().index(defender))
+                    self.addEventLog(f"{defender.name} blocks a shot and picks up za puck!")
                     self.clock -= random.randint(1,3)
                 elif defAction == DefAction.BlockLn: #pass fuckery
                     self.passCheck(nodeTarget, defender, atkAction)
@@ -284,11 +293,13 @@ class Game(object):
             self.currentZone = target
             self.changePossession()
             self.positionInPossession = SkaterPosition(self.skatersDefending().index(blockingDefender))
+            self.addEventLog(f"{blockingDefender.name} intercepts a pass and takes it cleanly!")
         else: #loose puck!
             if random.random() > 0.5:
                 self.currentZone = target
             self.loosePuck = True
             self.loosePuckDefAdv = True
+            self.addEventLog(f"Za pass is knocked loose!")
         
         
             
@@ -308,6 +319,7 @@ class Game(object):
             else:
                 self.awayScore += 1
             self.playStopped = True
+            self.addEventLog(f"{self.clockToMinutesSeconds()} - {shooter.name} scores! New score: {self.away.shortname} {self.awayScore} - {self.homeScore} {self.home.shortname}")
             self.faceoffSpot = FaceoffDot.Center
         elif random.randint(0,100) < normalDis(self.defendingGoalie().getAttribute('Dex'),75,0,100): #caught puck
             self.saveMadeStop(shooter, shotType)
@@ -315,6 +327,7 @@ class Game(object):
             self.loosePuck = True
             self.loosePuckDefAdv = True
             self.currentZone = random.sample(self.activeGraph().getAdjacentNodes(27),1)[0]
+            self.addEventLog(f"{self.clockToMinutesSeconds()} - shot knocked aside by {self.defendingGoalie().name}.")
         self.clock -= random.randint(2,6)
             
     def changePossession(self):

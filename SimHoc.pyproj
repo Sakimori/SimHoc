@@ -12,6 +12,7 @@
     <Name>SimHoc</Name>
     <RootNamespace>SimHoc</RootNamespace>
     <InterpreterId>MSBuild|hoc_env|$(MSBuildProjectFullPath)</InterpreterId>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,9 +37,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="team.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="twitHandler.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="db.py">
