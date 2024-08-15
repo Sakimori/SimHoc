@@ -1,7 +1,7 @@
 import random, team, player, os, math
 from team import Team
-from player import Player, AtkAction, DefAction, Skater, Goalie
-from skillContests import SkillContestParams, Situations
+from player import Player, Skater, Goalie
+from skillContests import SkillContestParams, Situations, AtkAction, DefAction
 from attributes import normalDis
 from hocUtils import RinkGraph
 from enum import Enum
@@ -219,8 +219,8 @@ class Game(object):
                 defender = self.defendingSkater() #reroll until eligible defender found
             self.ineligibleDefenders = [] #clear ineligible defs
                 
-            atkAction, nodeTarget = attacker.chooseAtkAction(validActions, defender) 
-            defAction = defender.chooseDefAction()
+            atkAction, nodeTarget = attacker.chooseAtkAction(validActions, self.currentZone, self.activeGraph(), defender) 
+            defAction = defender.chooseDefAction(self.currentZone, self.activeGraph())
             
             scParams = SkillContestParams().actionCheck(atkAction, defAction, self.currentSituation())
             result = self.skillContest(attacker, defender, scParams)

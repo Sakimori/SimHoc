@@ -1,6 +1,8 @@
 import os, itertools
 import networkx as nx
 
+from skillContests import DefAction
+
 class RinkGraph(object):
     """Base class for a graph of nodes representing a hockey rink. Description of nodes found in design documents."""
     G = nx.empty_graph()
@@ -129,6 +131,16 @@ class RinkGraph(object):
             if nodeDic['adjacent']:
                 adjacents.append(otherNodeName)
         return adjacents
+    
+    def getPossibleDefensiveActions(self, nodeName):
+        if isinstance(nodeName, int):
+            nodeName = str(nodeName)
+        actions = [DefAction.Steal, DefAction.Poke, DefAction.BlockLn, DefAction.Body, DefAction.Force]
+        if int(nodeName) < 10 or int(nodeName) > 40 or int(nodeName[1]) == 0 or int(nodeName[1]) == 7: #on wall
+            actions.append(DefAction.Pin)
+        if int(nodeName[1]) >= 5: #in defensive end
+            actions.append(DefAction.BlockSlot)
+        return actions
 
     def shotDanger(self, nodeName):
         """Returns an int indicating the danger of a shot from that zone. 0 is no danger, 100 is 26-Offensive Low Slot"""

@@ -1,4 +1,3 @@
-from player import AtkAction, DefAction
 from enum import Enum
 
 class Situations(Enum):
@@ -7,6 +6,27 @@ class Situations(Enum):
     PP2 = 2 #5v3 or 6v4
     SH1 = -1 #3v4, 4v5, 5v6
     SH2 = -2 #3v5 or 4v6
+    
+class AtkAction(Enum):
+    SkateB = 0
+    SkateF = 1
+    SkateT = 2
+    SkateA = 3
+    PassS = 4
+    PassF = 5
+    PassB = 6
+    Dump = 7
+    ShotS = 8
+    ShotW = 9
+
+class DefAction(Enum):
+    Steal = 0
+    Poke = 1
+    BlockLn = 2
+    Body = 3
+    Force = 4
+    Pin = 5
+    BlockSlot = 6
 
 class SkillContestParams(object):
     """Basic structure for contests of skill."""
@@ -27,9 +47,6 @@ class SkillContestParams(object):
                 return
             self.atkStats = result[0]
             self.defStats = result[1]
-
-
-
 
 #Bool overrides, or [List of (stat,weight) , List of (stat,weight)]
 evenTable = [

@@ -1,5 +1,7 @@
 import attributes
 from enum import Enum
+from random import sample
+from skillContests import AtkAction, DefAction, SkillContestParams
 
 class CreationError(Exception):
     pass
@@ -49,6 +51,10 @@ class Player(object):
             if attr.name.lower().startswith(shortname.lower()):
                 return attr
         return None
+    
+    def getAttributes(self):
+        """Returns a list of all Attributes."""
+        return self.attributes
 
     def setAttribute(self, shortname:str, value:float):
         for attr in self.attributes:
@@ -78,16 +84,29 @@ class Player(object):
             outString = f"{self.name[:3]}."
         return outString
 
-    def predictOpposingAction(self, opposingSkater):
+    def predictOpposingAction(self, opposingSkater, graph, currentNode):
+        oppAttributes = opposingSkater.getAttributes()
+        #TODO: Fuzzy opponent attributes based on wisdom
+        return self.chooseDefAction(statsOverride=oppAttributes)
         raise NotImplementedError()
 
-    def chooseAtkAction(self, actionDic, opposingSkater):
-        """Picks an action/target node combo."""
-        predAction = self.predictOpposingAction(opposingSkater)
-        raise NotImplementedError()
+    def chooseAtkAction(self, actionDic, currentNode, graph, opposingSkater):
+        """TODO: Make actual AI. Picks an action/target node combo."""
+        predAction = self.predictOpposingAction(opposingSkater, graph, currentNode)
+        targetNode = sample(actionDic.keys(),1)[0] #random target node
+        action = AtkAction[sample(actionDic[targetNode],1)[0]]
+        ovr = SkillContestParams().actionCheck(action,predAction).override
+        while ovr is not None and ovr is False: #don't pick an autofail
+            targetNode = sample(actionDic.keys(),1)[0] #random target node
+            action = sample(actionDic[targetNode],1)[0]
+            ovr = SkillContestParams().actionCheck(action,predAction).override
+        return (action, targetNode)
 
-    def chooseDefAction(self):
-        raise NotImplementedError()
+    def chooseDefAction(self, currentNode, graph, statsOverride = None):
+        """TODO: Make actual AI. Returns random possible defensive action."""
+        attrs = self.attributes if statsOverride is None else statsOverride
+        possibleActions = graph.getPossibleDefensiveActions(currentNode)
+        return sample(possibleActions,1)[0]
 
 class Skater(Player):
     """A hockey player that is not a goalie."""
@@ -97,25 +116,3 @@ class Skater(Player):
 class Goalie(Player):
     """A hockey player that *is* a goalie."""
     pass
-
-
-class AtkAction(Enum):
-    SkateB = 0
-    SkateF = 1
-    SkateT = 2
-    SkateA = 3
-    PassS = 4
-    PassF = 5
-    PassB = 6
-    Dump = 7
-    ShotS = 8
-    ShotW = 9
-
-class DefAction(Enum):
-    Steal = 0
-    Poke = 1
-    BlockLn = 2
-    Body = 3
-    Force = 4
-    Pin = 5
-    BlockSlot = 6
