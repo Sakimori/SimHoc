@@ -22,8 +22,12 @@ if __name__ == "__main__":
     #        print(atr)
     #    print("----------")
 
-    #g = TestGame()
-    #g.faceoffTest()
+    g = TestGame()
+    while not g.Game.gameOver:
+        g.Game.event()
+    log = g.Game.eventLogOut()
+    for line in log:
+        print(line)
 
 
     cookie = auzh()

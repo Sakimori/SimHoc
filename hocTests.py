@@ -93,16 +93,16 @@ class TestGame(object):
 
     def __init__(self):
         awayRoster = [
-                player.Player("Laika", 93),
-                player.Player("Vivi", 16),
-                player.Player("Jorts", 75),
-                player.Player("Yuki", 23),
-                player.Player("Konecny", 96),
-                player.Player("Laika", 93),
-                player.Player("Vivi", 16),
-                player.Player("Jorts", 75),
-                player.Player("Yuki", 23),
-                player.Player("Konecny", 11)
+                player.Player("April", 69),
+                player.Player("Abyss", 16),
+                player.Player("chloe!!", 20),
+                player.Player("Byte", 8),
+                player.Player("Myno", 18),
+                player.Player("April", 69),
+                player.Player("Abyss", 16),
+                player.Player("chloe!!", 20),
+                player.Player("Byte", 8),
+                player.Player("Myno", 18),
             ]
         homeRoster = [
                 player.Player("Landeskog", 92),
@@ -118,7 +118,7 @@ class TestGame(object):
             ]
 
 
-        aTeam = team.Team(awayRoster, [player.Player('Artemis', 17)], "Vail Powder", "PDR")
+        aTeam = team.Team(awayRoster, [player.Player('Artemis', 17)], "Cohost Eggbugs", "EGG")
         hTeam = team.Team(homeRoster, [player.Player('Kuemper', 35)], "Colorado Avalanche", "COL")
         self.Game = game.Game(aTeam, hTeam)
 
