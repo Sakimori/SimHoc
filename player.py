@@ -81,7 +81,9 @@ class Player(object):
     def predictOpposingAction(self, opposingSkater):
         raise NotImplementedError()
 
-    def chooseAtkAction(self):
+    def chooseAtkAction(self, actionDic, opposingSkater):
+        """Picks an action/target node combo."""
+        predAction = self.predictOpposingAction(opposingSkater)
         raise NotImplementedError()
 
     def chooseDefAction(self):
