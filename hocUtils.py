@@ -113,7 +113,10 @@ class RinkGraph(object):
     def getAllReachableFrom(self, nodeName):
         """Returns a dictionary where the keys are all reachable nodes, and the values are the list of actions that can reach the key node."""
         if isinstance(nodeName, int):
-            nodeName = str(nodeName)
+            if nodeName < 10:
+                nodeName = '0'+str(nodeName)
+            else:
+                nodeName = str(nodeName)
         allConnected = dict(self.G[nodeName])
         possibleReachable = {}
         for otherNode in allConnected:
@@ -124,7 +127,10 @@ class RinkGraph(object):
     def getAdjacentNodes(self, nodeName):
         """Returns a list of all nodes marked as adjacent by the current map."""
         if isinstance(nodeName, int):
-            nodeName = str(nodeName)
+            if nodeName < 10:
+                nodeName = '0'+str(nodeName)
+            else:
+                nodeName = str(nodeName)
         allConnected = dict(self.G[nodeName])
         adjacents = []
         for otherNodeName, nodeDic in allConnected.items():
@@ -134,7 +140,10 @@ class RinkGraph(object):
     
     def getPossibleDefensiveActions(self, nodeName):
         if isinstance(nodeName, int):
-            nodeName = str(nodeName)
+            if nodeName < 10:
+                nodeName = '0'+str(nodeName)
+            else:
+                nodeName = str(nodeName)
         actions = [DefAction.Steal, DefAction.Poke, DefAction.BlockLn, DefAction.Body, DefAction.Force]
         if int(nodeName) < 10 or int(nodeName) > 40 or int(nodeName[1]) == 0 or int(nodeName[1]) == 7: #on wall
             actions.append(DefAction.Pin)
@@ -145,7 +154,10 @@ class RinkGraph(object):
     def shotDanger(self, nodeName):
         """Returns an int indicating the danger of a shot from that zone. 0 is no danger, 100 is 26-Offensive Low Slot"""
         if isinstance(nodeName, int):
-            nodeName = str(nodeName)
+            if nodeName < 10:
+                nodeName = '0'+str(nodeName)
+            else:
+                nodeName = str(nodeName)
         
         if int(nodeName[1]) < 5:
             return 0

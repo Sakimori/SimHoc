@@ -39,14 +39,15 @@ class SkillContestParams(object):
         self.defStats = defStats
 
     def actionCheck(self, atkAction:AtkAction, defAction:DefAction, situation:Situations=Situations.EvenStrength):
-        """Determines which skills to test, and how strongly."""
+        """Determines which skills to test, and how strongly. Returns itself."""
         if situation == Situations.EvenStrength:
             result = evenTable[atkAction.value][defAction.value]
             if isinstance(result, bool):
                 self.override = result
-                return
+                return self
             self.atkStats = result[0]
-            self.defStats = result[1]
+            self.defStats = result[1]          
+        return self
 
 #Bool overrides, or [List of (stat,weight) , List of (stat,weight)]
 evenTable = [

@@ -1,6 +1,6 @@
 import attributes
 from enum import Enum
-from random import sample
+from random import sample, randint
 from skillContests import AtkAction, DefAction, SkillContestParams
 
 class CreationError(Exception):
@@ -72,7 +72,7 @@ class Player(object):
             return False
 
     def __str__(self):
-        return f"#{str(self.number)} {self.initials()}"
+        return self.idString()
 
     def initials(self):
         names = self.name.split()
@@ -87,13 +87,22 @@ class Player(object):
     def predictOpposingAction(self, opposingSkater, graph, currentNode):
         oppAttributes = opposingSkater.getAttributes()
         #TODO: Fuzzy opponent attributes based on wisdom
-        return self.chooseDefAction(statsOverride=oppAttributes)
-        raise NotImplementedError()
+        return self.chooseDefAction(currentNode, graph, statsOverride=oppAttributes)
 
     def chooseAtkAction(self, actionDic, currentNode, graph, opposingSkater):
         """TODO: Make actual AI. Picks an action/target node combo."""
         predAction = self.predictOpposingAction(opposingSkater, graph, currentNode)
-        targetNode = sample(actionDic.keys(),1)[0] #random target node
+        #first check if shot is possible and if to take it
+        if int(currentNode) % 10 >= 5 and (int(currentNode) not in [17,37]): #27 is valid wristshot (tuck)
+            shotroll = randint(0,100)
+            if shotroll < self.getAttribute('Sho'): #fuckin go for it buddy
+                if int(currentNode) % 10 == 5 and SkillContestParams().actionCheck(AtkAction.ShotS,predAction).override: #blueline and not autolose slapshot
+                    action = sample([AtkAction.ShotS, AtkAction.ShotW, AtkAction.ShotW],1)[0]
+                else:
+                    action = AtkAction.ShotW
+                targetNode = 26 #goal node
+                return (action, targetNode)
+        targetNode = sample(list(actionDic.keys()),1)[0] #random target node
         action = AtkAction[sample(actionDic[targetNode],1)[0]]
         ovr = SkillContestParams().actionCheck(action,predAction).override
         while ovr is not None and ovr is False: #don't pick an autofail
